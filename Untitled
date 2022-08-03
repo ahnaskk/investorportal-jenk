@@ -1,0 +1,79 @@
+CREATE TABLE part_tab (
+    c1 int default NULL,
+    c2 varchar(30) default NULL,
+    c3 date default NULL
+) engine=InnoDB
+PARTITION BY RANGE (year(c3)) (
+    PARTITION p1 VALUES LESS THAN (1995),
+    PARTITION p2 VALUES LESS THAN (1996),
+    PARTITION p3 VALUES LESS THAN MAXVALUE
+);
+
+
+ALTER TABLE orders ADD PARTITION ( PARTITION p1 VALUES LESS THAN (2015) );
+
+ALTER TABLE orders
+PARTITION BY RANGE (id) (
+    PARTITION p1 VALUES LESS THAN (1000),
+    PARTITION p2 VALUES LESS THAN (2000),
+    PARTITION p3 VALUES LESS THAN MAXVALUE
+);
+
+
+ALTER TABLE orders ADD PARTITION ( PARTITION p1 VALUES LESS THAN (2016) );
+ALTER TABLE orders ADD PARTITION ( PARTITION p2 VALUES LESS THAN (2017) );
+ALTER TABLE orders ADD PARTITION ( PARTITION p3 VALUES LESS THAN (2018) );
+ALTER TABLE orders ADD PARTITION ( PARTITION p4 VALUES LESS THAN (2019) );
+ALTER TABLE orders ADD PARTITION ( PARTITION p5 VALUES LESS THAN (2020) );
+ALTER TABLE orders ADD PARTITION ( PARTITION p6 VALUES LESS THAN (2021) );
+ALTER TABLE orders ADD PARTITION ( PARTITION p7 VALUES LESS MAXVALUE );
+
+
+ALTER TABLE categories
+PARTITION BY RANGE (year(date)) (
+    (
+        PARTITION p1 VALUES LESS THAN (1),
+        PARTITION p2 VALUES LESS THAN (2),
+        PARTITION p3 VALUES LESS THAN (3),
+        PARTITION p7 VALUES LESS THAN MAXVALUE
+    );
+    
+    
+    
+    ALTER TABLE orders
+    PARTITION BY RANGE (TO_DAYS(date))
+    (
+        PARTITION p_invalid_date VALUES LESS THAN (0),
+        PARTITION p_201809 VALUES LESS THAN (TO_DAYS('2018-09-01 00:00:00')),
+        PARTITION p_201810 VALUES LESS THAN (TO_DAYS('2018-10-01 00:00:00')),
+        PARTITION p_max_future_dates VALUES LESS THAN MAXVALUE
+    );
+    
+    
+    
+    CREATE TABLE `app_log_Test` (
+        `id` bigint(20) NOT NULL AUTO_INCREMENT,
+        `dateCreated` datetime NOT NULL,
+        `host` varchar(512) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+        `label` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+        `event` varchar(32) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+        `level` varchar(8) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+        `message` text COLLATE utf8mb4_unicode_ci,
+        `version` bigint(20) NOT NULL DEFAULT '0',
+        PRIMARY KEY (`id`),
+        KEY `app_log_dateCreated` (`dateCreated`),
+        KEY `app_log_label` (`label`),
+        KEY `app_log_event` (`event`),
+        KEY `app_log_level` (`level`)
+    ) ENGINE=InnoDB;
+    
+    alter table app_log_Test drop PRIMARY KEY, add primary key (`id`, `dateCreated`);
+    
+    ALTER TABLE app_log_Test
+    PARTITION BY RANGE (TO_DAYS(dateCreated))
+    (
+        PARTITION p_invalid_date VALUES LESS THAN (0) ENGINE = InnoDB,
+        PARTITION p_201809 VALUES LESS THAN (TO_DAYS('2018-09-01 00:00:00')),
+        PARTITION p_201810 VALUES LESS THAN (TO_DAYS('2018-10-01 00:00:00')),
+        PARTITION p_max_future_dates VALUES LESS THAN MAXVALUE
+    );

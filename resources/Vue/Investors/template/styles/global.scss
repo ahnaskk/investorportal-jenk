@@ -1,0 +1,138 @@
+@import '~/mixins.scss';
+@import "vue-select/src/scss/vue-select.scss";
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li,
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+.content-box {
+    min-height: 100px;
+    height: 100%;
+
+    &.bg {
+        border-radius: 10px;
+        background: white;
+        box-shadow: 0 5px 20px rgba($color: #010581, $alpha: 0.05);
+    }
+
+    &.overflow{
+        position: relative;
+        border-radius: 10px 0 0 0;
+        background: #EFF4F9;
+        z-index: 1;
+        margin-right: -10px;
+        @include xl{
+            border-radius: 10px;
+        }
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: transparent;
+            pointer-events: none;
+            background: transparent;
+            box-shadow: 100vw 100vw 0 100vw #EFF4F9;
+            z-index: -1;
+            @include xl{
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.btn{
+    padding: 0 15px;
+    background-color: #E6ECF3;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #7278A6;
+    height: 40px;
+    font-size: 14px;
+}
+.blue-bt {
+    border: none;
+    outline: none;
+    background: #3246D3;
+    border-radius: 10px;
+    $h: 49px;
+    height: $h;
+    line-height: $h;
+    text-decoration: none;
+    text-align: center;
+    width: 180px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 11px 23px -8px #3B4ED5;
+    cursor: pointer;
+    &.disabled{
+        background: #dfdfdf!important;
+        cursor: not-allowed!important;
+        box-shadow: none!important;
+    }
+    @include xxl{
+        font-size: 15px;
+    }
+}
+
+.close-btn{
+    $offset: 52px;
+    height: $offset;
+    width: $offset;
+    background: #E6ECF3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+}
+
+.input{
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #9C9FB4;
+    box-shadow: 0 5px 20px rgba($color: #010581, $alpha: 0.05);
+}
+
+.error-msg,.mandatory{
+    color: #ff4a4a;
+}
+.inline-block{
+    display: inline-block;
+}

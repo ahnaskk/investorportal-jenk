@@ -1,0 +1,91 @@
+@import '~/mixins.scss';
+.payment-box {
+    padding: 15px 20px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    &.negative {
+        .icon {
+            background: #FF6977;
+        }
+
+        .amount {
+            color: #FF6977;
+        }
+    }
+    &.rcode {
+        .icon{
+            background: #3246d3;
+        }
+        .amount {
+            color: #3246d3;
+        }
+    }
+
+    .icon {
+        $offset: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #4EBE67;
+        height: $offset;
+        width: $offset;
+        flex: 0 0 auto;
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+        margin-right: 20px;
+        border-radius: 10px;
+
+        @include xs {
+            $offset: 40px;
+            font-size: 16px;
+        }
+    }
+
+    .pay-data {
+        .paid-by {
+            font-size: 17px;
+            color: #2A4A76;
+            font-weight: bold;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 300px;
+            padding-right: 20px;
+            @include xs {
+                font-size: 13px;
+            }
+        }
+
+        .pay-date {
+            color: #8A8FB4;
+            font-size: 15px;
+            font-weight: normal;
+
+            @include xs {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .amount {
+        font-size: 24px;
+        font-weight: bold;
+        color: #26B142;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .type{
+            font-size: 14px;
+            font-weight: normal;
+        }
+        @include xs {
+            font-size: 16px;
+        }
+    }
+}

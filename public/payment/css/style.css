@@ -1,0 +1,309 @@
+/* Global Styles */
+/* Coded By SK */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  background: #FBFCFE;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  color: #2A4A76;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+}
+
+p {
+  margin: 0 0 25px;
+  font-size: 15px;
+  line-height: 26px;
+  color: #7a7a7a;
+}
+
+a, i, button {
+  transition: all 0.45s ease-in-out;
+  outline: none;
+}
+
+a:focus, i:focus, button:focus {
+  outline: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #11505d;
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+.img {
+  overflow: hidden;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, textarea, button, div, section {
+  box-sizing: border-box;
+}
+
+button, a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.payment-header {
+  display: flex;
+  width: 100%;
+  max-height: 100vh;
+  flex-direction: column;
+  padding: 25px 0;
+  align-items: center;
+}
+.payment-header .container {
+  max-width: 100%;
+  padding: 0 50px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+.payment-header .logo {
+  display: flex;
+}
+.payment-header .menu-right {
+  display: flex;
+}
+.payment-header .brand-logo {
+  display: flex;
+  margin: -17px 0 0;
+}
+.payment-header .menu-right ul {
+  list-style: none;
+  display: flex;
+}
+.payment-header .menu-right ul li {
+  padding: 0 0 0 15px;
+}
+.payment-header .menu-right ul li a {
+  color: #ACAFC5;
+  font-weight: 700;
+}
+.payment-header .menu-right ul li .user a {
+  background: #eee;
+  border-radius: 100%;
+}
+
+.payment-content {
+  height: calc(100% - 150px);
+  align-items: center;
+}
+.payment-content .container {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 150px;
+  align-items: center;
+  display: flex;
+}
+.payment-content .caption-left {
+  align-items: center;
+  display: flex;
+}
+.payment-content .caption-left h1 {
+  font-size: 36px;
+  line-height: 60px;
+}
+.payment-content .caption-left span {
+  font-size: 46px;
+  display: block;
+}
+.payment-content .caption-left p {
+  font-size: 26px;
+  color: #ACAFC5;
+  line-height: 40px;
+}
+.payment-content .caption-left p span {
+  font-size: 26px;
+  color: #F9533F;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.payment-form-right .payment-form {
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 3px 30px rgba(42, 58, 200, 0.08);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 700px;
+}
+.payment-form-right .field-group {
+  display: block;
+  margin: 0 0 25px;
+}
+.payment-form-right .field-group li.parsley-custom-error-message {
+  color: #F9533F;
+}
+.payment-form-right .field-group label {
+  color: #2A4A76;
+  font-size: 16px;
+  font-weight: 700;
+}
+.payment-form-right .field-group .field {
+  display: block;
+  border: 1px solid #E1E7F6;
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
+  height: 55px;
+  box-shadow: 0 3px 15px rgba(28, 56, 167, 0.08);
+  padding: 10px 25px;
+  color: #999DBA;
+}
+.payment-form-right .field-group .field::-moz-placeholder {
+  color: #999DBA;
+}
+.payment-form-right .field-group .field:-ms-input-placeholder {
+  color: #999DBA;
+}
+.payment-form-right .field-group .field::placeholder {
+  color: #999DBA;
+}
+.payment-form-right .field-group .btn-submit {
+  width: 100%;
+  display: block;
+  background: #3246D3;
+  border-radius: 10px;
+  color: #ffff;
+  border: 0;
+  padding: 15px;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 23, 141, 0.35);
+}
+.payment-form-right .field-group .payment-type {
+  display: flex;
+  border: 1px solid #E1E7F6;
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
+  height: 55px;
+  box-shadow: 0 3px 15px rgba(28, 56, 167, 0.08);
+  padding: 10px 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-form-right .field-group .payment-type .payment-field {
+  width: 48%;
+  border: 0;
+  color: #999DBA;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.payment-form-right .field-group .payment-type .payment-field::-ms-expand {
+  display: none;
+}
+.payment-form-right .field-group .payment-type .payment-img {
+  width: 48%;
+}
+.payment-form-right .btn-group {
+  margin: 0;
+}
+
+footer .container {
+  max-width: 100%;
+  width: 100%;
+  padding: 10px 50px;
+}
+footer .copyright {
+  font-size: 14px;
+  color: #999DBA;
+  margin: 0;
+}
+
+.menu-right #dropdownParent {
+  position: relative;
+}
+.menu-right #dropdownParent .dropdown-menu-custom {
+  display: none;
+  position: absolute;
+  right: -15px;
+  height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 34px;
+  bottom: 2px;
+  left: auto;
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px -4px #0000005c;
+  z-index: 10;
+  border-radius: 3px;
+}
+.menu-right #dropdownParent .dropdown-menu-custom.active {
+  display: block;
+}
+.menu-right #dropdownParent .dropdown-menu-custom::before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border: 10px solid transparent;
+  border-bottom: 10px solid white;
+  position: absolute;
+  bottom: 100%;
+  right: 15px;
+}
+.menu-right #dropdownParent .dropdown-menu-custom li {
+  padding-left: 0;
+}
+.menu-right #dropdownParent .dropdown-menu-custom li a {
+  border: none;
+  outline: none;
+  background: #3246D3;
+  border-radius: 10px;
+  height: 49px;
+  line-height: 38px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menu-right #dropdownParent .dropdown-menu-custom li p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #5b5b8f;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,103 @@
+.detailed-get-started{
+      list-style: none;
+}
+/* .detailed-get-started .welcome-meg h5{
+padding-left: 1rem;
+} */
+.detailed-get-started .welcome-meg h3{
+      font-weight: bold;
+      padding: 1rem 1rem 1rem 0;
+      margin-bottom: 0px;
+}
+.detailed-get-started .welcome-meg p{
+      padding-left: 3rem;
+}
+
+.detailed-get-started .get-started-section{
+      text-transform: capitalize;
+      width: 60%;
+      align-items: center;
+      border: 1px solid #acacac;
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      padding: 20px 24px;
+      border-radius: 5px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+}
+.detailed-get-started .get-started-section a{
+      color: #232323;
+      font-weight: bold;
+}
+
+.detailed-get-started .more-resources ul a:hover{
+      font-weight: bold;
+      text-decoration: none;
+      color: #232323;
+}
+.detailed-get-started .more-resources ul{
+      text-decoration: none;
+}
+.detailed-get-started .more-resources .fas{
+      font-size: smaller;
+}
+
+.reference-internal{
+      padding-left: 2rem;
+      color: #232323;
+}
+
+.intro{
+      padding-top: 1rem;
+}
+.intro ul{
+      padding-left: 3rem;
+}
+.home-user-types ul{
+      padding-left: 3rem;
+}
+.home-user-types ul li a{
+      color: #232323;
+}
+
+
+.logic-flow .flow-item{
+      font-size: large; 
+      text-align: center; 
+      padding-top: 2rem;
+ }
+ .logic-flow .fas{
+       padding: 0.5rem;
+       font-size: 1.5rem;
+       font-weight: bold;
+ }
+ .logic-flow .flow-item #transaction{
+       padding-left: 6rem;
+ }
+ .logic-flow .flow-item span{
+       padding: 1rem;
+       border: 2px solid black;
+       /* border-color: grey; */
+ }
+ .logic-flow .flow-item a{
+       color: black;
+       text-decoration: none;
+       font-weight: bold;
+ }
+ .logic-flow .flow-item a:hover{
+       text-decoration: underline;
+ }
+
+ .Calculations h4{
+       font-style: italic;
+ }
+ #mainContent .Calculations img{
+       border: none;
+       /* width: auto; */
+ }
+ #mainContent .Calculations img .short-img{
+       width: auto;
+ }
+
+

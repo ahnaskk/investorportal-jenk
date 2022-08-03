@@ -1,0 +1,48 @@
+@import '~/mixins.scss';
+// pagination
+.pagination-container{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    @include md{
+        flex-direction: column;
+    }
+    .table-info{
+        font-size: 15px;
+        font-weight: normal;
+        color: #8F8FB1;
+        @include md{
+            margin-bottom: 20px;
+        }
+    }
+    .pagination-info{
+        color: #8286A5;
+    }
+    ::v-deep .paginator{
+        display: flex;
+        margin: 0 -5px;
+        li{
+            font-size: 14px;
+            font-weight: bold;
+            color: #8286A5;
+            background: white;
+            text-align: center;
+            margin: 0 5px;
+            border-radius: 5px;
+            user-select: none;
+            a{  
+                $offset: 33px;
+                height: $offset;
+                width: $offset;
+                line-height: $offset;
+                display: block;
+            }
+            &.disabled,&.prev,&.next{
+                background: none;
+            }
+            &.active{
+                box-shadow: 0 3px 6px rgba($color: #08007A, $alpha: 0.13);
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.align-msgBox{
+    padding:15px;
+}
+.align-center{
+    display: flex;
+    align-items: center;
+}
+.justify-between{
+    display: flex;
+    justify-content: space-between;
+}
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+.justify-around{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-0{
+    margin: 0;
+}
+.fd-cloumn{
+    flex-direction: column;
+}

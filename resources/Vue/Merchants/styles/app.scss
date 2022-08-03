@@ -1,0 +1,38 @@
+// Fonts
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// mixins
+ @import './mixins.scss';
+// Variables
+ @import "variables";
+// global styles
+@import './global.scss';
+// buttons
+ @import './buttons.scss';
+// colors
+ @import './colors.scss';
+// font styles
+ @import './fonts.scss';
+//  all
+@import './all.scss';
+// components
+//  @import './components/header.scss';
+//  @import './components/transaction.scss';
+//  @import './components/notification.scss';
+// // home
+// @import './components/home.scss';
+// // message component
+// @import './components/message.scss';
+// // alignment
+// @import './alignment.scss';
+// // breadcrumbs
+// @import './components/breadcrumb.scss';
+// // dashboard
+// @import './components/dashboard.scss';
+// // popup
+// @import './components/popup.scss';
+// // login page
+// @import './components/login.scss';
+// // validations
+// @import './validation.scss';
+// // session expired component
+// @import './components/sessionExpired.scss';

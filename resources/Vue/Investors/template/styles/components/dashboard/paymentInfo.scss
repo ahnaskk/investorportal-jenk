@@ -1,0 +1,21 @@
+@import '~/mixins.scss';
+
+.payment-info-sec{
+    padding: 42px 0 0 50px;
+    @include xxxl{
+        padding: 30px 0 0 30px;
+    }
+    @include xl{
+        margin-top: 42px;
+        padding-right: 42px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    @include lg{
+        flex-direction: column;
+    }
+    @include xs{
+        padding: 28px 20px;
+    }
+}

@@ -1,0 +1,8 @@
+.parsley-errors-list{
+    color: #dc3545ed;
+    margin-top: 5px;
+}
+span.error,.validate_star{
+    color: #dc3545ed;
+    margin-left: 5px;
+}

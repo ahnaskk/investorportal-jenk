@@ -1,0 +1,65 @@
+.wrapper{
+    h3{
+        font-size: 26px;
+        font-weight: 400;
+        color: #48486E;
+        margin-bottom: 20px;
+    }
+    span{
+        max-width: 1200px;
+        color: #48486E;
+        line-height: 24px;
+        opacity: 0.8;
+        margin: 20px 0;
+        display: block;
+    }
+    .controls{
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        .save-options{
+            width: 500px;
+            height: 49px;
+            margin-right: 20px;
+        }
+        button{
+            height: 52px;
+        }
+    }
+    ul{
+        li{
+            &+li{
+                margin-top: 10px;
+            }
+        }
+    }
+}
+::v-deep .v-select{
+    .vs__dropdown-toggle{
+        border: none;
+        background: white;
+        box-shadow: 0 5px 20px rgba(1, 5, 129, 0.05);
+        padding: 12px 10px 12px;
+        border-radius: 10px;
+        color: #9c9fb4;
+        .vs__selected-options{
+            color: inherit;
+            span.vs__selected{
+                color: inherit;
+            }
+            input.vs__search{
+                color: inherit;
+            }
+        }
+    }
+    .vs__dropdown-menu{
+        border: none;
+        .vs__dropdown-option{
+            line-height: 40px;
+            &.vs__dropdown-option--highlight{
+                background: #3246d3;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,276 @@
+$centerDecImg:url(../assets/dollar-dash.png);
+$sideDecPicL:url(../assets/dash-bg.png);
+$sideDecPicR:url(../assets/dash-bg2.png);
+
+.dashboard-header{
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 15px;
+    @include sm{
+        margin: 0 -20px;
+        border-radius: 0;
+        background: transparent;
+    }
+    h2,h3{
+        font-weight: 400;
+    }
+    $decOffset:300px;
+    $decOffsetMd:200px;
+    $decOffsetSm:200px;
+    $decOffsetLg:200px;
+    z-index: 1;
+    &::before,&::after{
+        content: '';
+        height: $decOffset;
+        width: $decOffset;
+        position: absolute;
+        top: 50%;
+        transform: translate(0,-50%);
+        z-index: -1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 0 30px;
+        @include lg{
+            margin: 0 10px;
+            height: $decOffsetLg;
+            width: $decOffsetLg;
+        }
+        @include md{
+            width: $decOffsetMd;
+            height: $decOffsetMd;
+            margin: 0 10px;
+        }
+        @include sm{
+            width: $decOffsetSm;
+            height: $decOffsetSm;
+        }
+    }
+    &::after{
+
+        @include sm{
+            transform: translate(50%,-50%);
+        }
+    }
+    &::before{
+
+        @include sm{
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+.welcome{
+    margin:0 0 10px 0;
+    color: #3c341a;
+    font-size: 30px;
+    font-weight: 800!important;
+    text-align: center;
+    padding: 0 20px;
+}
+.funded-title{
+    margin: 0 0 15px 0;
+    color: #3c341a;
+    font-size: 20px;
+    &::after{
+        content: '';
+        position: absolute;
+        top: 110%;
+        width: 30px;
+        height: 2px;
+        background: #e3c773;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.funded-amount{
+    margin: 0 0 10px 0;
+    color: #2d2f46;
+    font-weight: 800!important;
+    font-size: 25px;;
+}
+.date-icon{
+    margin: 0 0 10px 0;
+}
+.funded-date{
+    margin: 0 0 28px 0;
+    color: #5d5f7b;
+    font-size: 15px;;
+}
+.buttons{
+    width: 420px;
+    @include sm{
+        flex-direction: column;
+        align-items: center;
+        button:first-of-type{
+            margin-bottom: 15px;
+        }
+    }
+}
+.decorator{
+    background-image: $centerDecImg;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+}
+.date-icon{
+    color: #9e874a;
+}
+// information display box for notifications and transactions pages
+.info-box{
+    padding: 15px 30px;
+    background: #fff;
+    width: 750px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    @include sm{
+        padding: 15px 15px;
+    }
+    @include xs{
+        padding: 15px 10px;
+    }
+}
+.content-box{
+    margin: 30px 0 0 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    min-height: 0;
+    @include sm{
+        padding: 20px 10px;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        padding: 30px 10px;
+        width: calc(25% - 20px);
+        border-radius:5px;
+        margin: 10px;
+        box-sizing: border-box;
+        flex-direction: column;
+        flex-grow: 1;
+        h2.strong{
+            font-size: 25px;
+            margin: 0 0 5px 0;
+            color: #fff;
+
+        }
+        h3.slim{
+            font-size: 15px;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+            color: #fff;
+        }
+        @include xxl{
+            border: 0;
+            flex-grow: 1;
+            position: relative;
+            width: calc(50% - 40px);
+            .strong{
+                position: relative;
+                margin-bottom: 15px;
+            }
+        }
+        @include sm{
+            width: 100%;
+            .slim{
+                font-size: 12px;
+            }
+            .strong{
+                font-size: 15px;
+            }
+        }
+    }
+    .br{
+        border-right: 1px solid #ccc;
+    }
+    .bb{
+        border-bottom: 1px solid #ccc;
+    }
+    .decRoll::after,.decRoll::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%,-50%);
+        border-radius: 50%;
+        display: none;
+    }
+    .decRoll::before{
+        height: 40px;
+        width: 40px;
+        background: #fff;
+    }
+    .decRoll::after{
+        height: 15px;
+        width: 15px;
+        background: transparent;
+        border: 1px solid #ccc;
+    }
+}
+.w-100{
+    width: 100%;
+}
+.showXxl{
+    display: none;
+    @include xxl{
+        @include flex-center;
+        flex-direction: column;
+        padding: 25px;
+        text-align: center;
+        h2,h3{
+            margin: 0 0 10px 0;
+            position: relative;
+        }
+        .strong{
+            font-size: 20px;
+            margin: 0 0 10px 0;
+            color:#313347;
+        }
+        .slim{
+            font-size: 15px;
+            font-weight: 400;
+            color: #7b7d98;
+            &::after{
+                content: '';
+                height: 2px;
+                width: 30px;
+                background: #ccc;
+                position: absolute;
+                bottom: -5px;
+                left: 50%;
+                transform: translate(-50%,0);
+            }
+        }
+    }
+    @include sm{
+        .strong{
+            font-size: 15px;
+        }
+        .slim{
+            font-size: 12px;
+        }
+    }
+}
+.controls{
+    .btn.blue{
+        border: 1px solid #D4D0E3;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+}
+.b-c{background-color: #13aaf9;}
+.m-c{background-color: #f8bb90;}
+.v-c{background-color: #7460ee;}
+.r-c{background-color: #e279fa;}
+.g-c{background-color: #b9ed8f;}
+.r-c{background-color: #ff6347;}
+.o-c{background-color: #ffb22b;}
+.i-c{background-color: #1e90ff;}

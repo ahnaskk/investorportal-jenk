@@ -1,0 +1,18 @@
+.alert-bg{
+    background: rgba($color: #fff, $alpha: 0.9);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow: auto;
+    padding: 30px 0;
+    .alert-box{
+        max-width: 100%;
+    }
+}

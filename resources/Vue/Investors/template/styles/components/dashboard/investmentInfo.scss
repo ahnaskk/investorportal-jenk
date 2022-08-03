@@ -1,0 +1,165 @@
+@import '~/mixins.scss';
+
+.invst-info-card {
+    background: #3246D3;
+    display: flex;
+    border-radius: inherit;
+    min-height: inherit;
+    height: 100%;
+    @include md{
+        flex-wrap: wrap;
+    }
+    .amounts {
+        width: auto;
+        padding: 28px 30px;
+        @include sm{
+            width: 100%
+        }
+    }
+    
+}
+
+.invst-info {
+    &.principal {
+        margin-bottom: 10px;
+    }
+    &.pending-ach{
+        height: 35px;
+        margin-bottom: 10px;
+        display: flex;
+        color: white;
+        $brd: 10px;
+        border-radius: $brd;
+        overflow: hidden;
+        font-weight: 900;
+        &.credit{
+            background: linear-gradient(to right,rgba(0,0,0,.15) 15%, rgba(84,84,84,.15) );
+            .value{
+                background: #FF88A3;
+            }
+        }
+        &.debit{
+            background: linear-gradient(to right,rgba(0,0,0,.15) 15%, rgba(84,84,84,.15) );
+            .value{
+                background: #FFB155;
+            }
+        }
+        .value{
+            border-radius: $brd;
+            height:100%;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            min-width: 92px;
+        }
+        .label{
+            border-radius: $brd;
+            flex-grow: 1;
+            height:100%;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            color: #D1D6FF;
+            font-weight: normal;
+            font-size: 15px;
+        }
+    }
+    &.list {
+        margin: -4px 0;
+
+        .info-li {
+            padding: 4px 0;
+
+            .bg-box {
+                padding: 11px 0 11px 25px;
+                background: linear-gradient(to right,rgba(0,0,0,.15) 15%, rgba(84,84,84,.15) );
+                border-radius: 10px;
+                height: 73px;
+                .title {
+                    font-size: 15px;
+                    font-weight: normal;
+                }
+
+                .amount {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    
+    .field-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white;
+        &.column{
+            flex-direction: column;
+        }
+        .add-fund{
+            color: inherit;
+            font-size: 10px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            margin: 0 0 15px 0;
+            padding: 5px 20px;
+            background: #4EBE67;
+            border-radius: 15px;
+            position: relative;
+            height: 30px;
+            cursor: pointer;
+            &:hover ul.dropdown{
+                display: block;
+            }
+            .caption{
+                margin: 0 5px 0 0;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            ul.dropdown{
+                $cl: #3144cf;
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: 160px;
+                background: white;
+                color: $cl;
+                border-radius: 4px;
+                padding: 5px 0;
+                font-size: 13px;
+                box-shadow: 0 0 15px -3px #aaa;
+                li{
+                    padding: 5px;
+                    &:hover{
+                        color: white;
+                        background: $cl;
+                    }
+                }
+            }
+        }
+    }
+
+    h3,
+    h2 {
+        margin: 0;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: normal;
+        color: #D1D6FF;
+    }
+
+    .amount {
+        color: white;
+    }
+}
+.grow{
+    flex-grow: 1;
+}
+

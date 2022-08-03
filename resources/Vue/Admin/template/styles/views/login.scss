@@ -1,0 +1,138 @@
+@import '~a/mixins.scss';
+
+.design_sec {
+    min-height: 100vh;
+    height: 100%;
+    width: 50%;
+    float: right;
+    background: #d43724 url('~@image/back.svg');
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: 65%;
+}
+
+.form_sec {
+    // float: left;
+    // width: 50%;
+    // min-height: 100vh;
+    height: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    @include flex-center;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    float: right;
+
+    @include md {
+        width: 90%;
+    }
+}
+
+.form_container {
+    @include flex-center;
+    flex-direction: column;
+    position: relative;
+}
+
+.login_form_title {
+
+    font-size: 20px;
+    margin: 0 0 0 0;
+    color: #9596a0;
+    align-self: flex-start;
+
+    // text-shadow: -3px 2px 1px #ccc;
+}
+
+#login-page {
+
+    input.password,
+    input.email {
+        height: 30px;
+        width: 300px;
+        max-width: 100%;
+        margin: 20px 0 0 0;
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+        // box-shadow: 0 0 24px -5px #ccc;
+        padding: 5px 0 5px 20px;
+
+        @include sm {
+            max-width: 65%;
+        }
+
+        &::placeholder {
+            color: #888;
+            font-style: italic;
+        }
+
+        // &.email{
+
+        // }
+        &.password {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.checkbox-group {
+    font-size: 14px;
+    color: $dark;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+
+    input,
+    label {
+        cursor: pointer;
+    }
+}
+
+.bt_login {
+    padding: 13px 0;
+    border: none;
+    width: 300px;
+    background: #d43724;
+    color: white;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+
+img.logo-lg {
+    margin-bottom: 10px;
+    display: block;
+    position: absolute;
+    bottom: calc(100% + 0px);
+    align-self: flex-start;
+    width: 100%;
+}
+
+a.forgot_pwd {
+    margin-top: 15px;
+    color: #aaa;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+        color: #444;
+        text-decoration: none;
+    }
+
+    &:visited {
+        color: #d43724;
+    }
+}
+
+.err_msg{
+    margin: -13px 0 0;
+    font-size: 12px;
+    color: red;
+}

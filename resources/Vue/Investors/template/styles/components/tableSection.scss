@@ -1,0 +1,247 @@
+@import '~/mixins.scss';
+.table-sec{
+    .table-wrapper{
+        margin-bottom: 20px;
+        overflow: auto;
+        @include xs{
+            overflow-x: scroll;
+        }
+    }
+}
+// table header
+.table-header{
+    .filters{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        color: #8F8FB1;
+        @include xs{
+            flex-direction: column-reverse;
+        }
+    }
+    .date-selector{
+        display: flex;
+        margin: -17px;
+        flex-wrap: wrap;
+        &.download{
+            .input-col{
+                width: 25%;
+                &.bt-col{
+                    width: 25%;
+                    justify-content: space-between;
+                    @include xs{
+                        width: 100%;
+                        flex-flow: column;
+                    }
+                    .action-bt{
+                        width: calc(50% - 17px);
+                        @include xs{
+                            width: 100%;
+                        }
+                    }
+                }
+                @include xs{
+                    width: 100%;
+                }
+            }
+        }
+        .input-col{
+            padding: 17px;
+            flex: 0 0 auto;
+            width: 28%;
+            @include lg{
+                width: 50%;
+            }
+            @include sm{
+                width: 100%;
+            }
+            &.bt-col{
+                display: flex;
+                align-items: flex-end;
+                width: 16%;
+                @include lg{
+                    width: 50%;
+                }
+                @include sm{
+                    width: 100%;
+                }
+                .action-bt{
+                    width: 100%;
+                    &.download-link{
+                        $cl: #ff6977;
+                        background: $cl;
+                        box-shadow: 0 11px 23px -8px $cl;
+                    }
+                }
+            }
+            &.hr{
+                width: 100%;
+                .hr{
+                    padding-bottom: 43px;
+                    border-bottom: 1px solid #E7EDF3;
+                    margin-bottom: 20px;
+                    @include sm{
+                        padding-bottom: 0;
+                    }
+                }
+            }
+            .input-wrapper{
+                margin-top: 14px;
+                padding: 0;
+            }
+            .input-title{
+                font-size: 17px;
+                color: #48486E;
+            }
+            .input{
+                margin-top: 14px;
+            }
+            input.input{
+                padding-left: 20px;
+            }
+        }
+    }
+    .filter-box{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        .select-box{
+            margin: 0 10px;
+        }
+    }
+    .search-box{
+        display: flex;
+        align-items: center;
+        @include xs{
+            margin-bottom: 25px;
+            white-space: nowrap;
+        }
+        form{
+            margin-left: 13px;
+        }
+        
+    }
+    .search-input{
+        $line:40px;
+        height: $line;
+        line-height: $line;
+        width: 234px;
+        background: white;
+        border: none;
+        border-radius: 10px;
+        color: inherit;
+        padding: 0 15px;
+        box-shadow: 0 5px 20px rgba($color: #010581, $alpha: 0.05);
+        font-size: inherit;
+        &::placeholder{
+            color: #8F8FB1;
+            opacity: 0.5;
+        }
+    }
+}
+// table pagination
+.table-footer{
+    display: flex;
+    justify-content: space-between;
+    @include md{
+        flex-direction: column;
+    }
+    .table-info{
+        font-size: 15px;
+        font-weight: normal;
+        color: #8F8FB1;
+        @include md{
+            margin-bottom: 20px;
+        }
+    }
+    ::v-deep .paginator{
+        display: flex;
+        margin: 0 -5px;
+        li{
+            font-size: 14px;
+            font-weight: bold;
+            color: #8286A5;
+            background: white;
+            text-align: center;
+            margin: 0 5px;
+            border-radius: 5px;
+            user-select: none;
+            a{  
+                $offset: 33px;
+                height: $offset;
+                width: $offset;
+                line-height: $offset;
+                display: block;
+            }
+            &.disabled,&.prev,&.next{
+                background: none;
+            }
+            &.active{
+                box-shadow: 0 3px 6px rgba($color: #08007A, $alpha: 0.13);
+            }
+        }
+    }
+}
+
+::v-deep .v-select{
+    .vs__dropdown-toggle{
+        border: none;
+        background: white;
+        box-shadow: 0 5px 20px rgba(1, 5, 129, 0.05);
+        padding: 12px 10px 12px;
+        border-radius: 10px;
+        color: #9c9fb4;
+        .vs__selected-options{
+            color: inherit;
+            span.vs__selected{
+                color: inherit;
+            }
+            input.vs__search{
+                color: inherit;
+            }
+        }
+    }
+    .vs__dropdown-menu{
+        border: none;
+        .vs__dropdown-option{
+            line-height: 40px;
+            &.vs__dropdown-option--highlight{
+                background: #3246d3;
+            }
+        }
+    }
+}
+
+    ::v-deep .multiselect,::v-deep .multiselect__tags{
+        min-height: 52px;
+        border: none;
+        color: #9c9fb4;
+        box-shadow: 0 5px 20px rgba(1, 5, 129, 0.05);
+        border-radius: 10px;
+        position: relative;
+        outline: none;
+    }
+    ::v-deep .multiselect__tag{
+        background-color: #3246d3;
+    }
+    ::v-deep .multiselect__option--highlight,  ::v-deep .multiselect__option--highlight::after{
+        background-color: #3246d3;
+    }
+    ::v-deep .multiselect__tag i:hover{
+        background-color: #2435bb;
+    }
+    ::v-deep .multiselect__tag-icon:after{
+        color:#b4bcfb
+    }
+    ::v-deep .multiselect__input{
+        border: none!important;
+    }
+    ::v-deep .multiselect__select::before{
+        display: none;
+    }
+    ::v-deep .multiselect__placeholder{
+        margin: 9px 0 0 10px;
+        font-size: 16px;
+        padding: 0;
+        color: #9c9fb4;
+    }

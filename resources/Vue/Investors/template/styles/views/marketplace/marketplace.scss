@@ -1,0 +1,123 @@
+@import '~/mixins.scss';
+.marketplace-view{
+    position: relative;
+}
+.servicebox-row {
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .col {
+        padding: 10px;
+        width: 50%;
+        min-width: 470px;
+        // flex-grow: 1;
+        &.hidden{
+            display: none;
+        }
+        @include sm{
+            width: 100%;
+            min-width: 0;
+        }
+    }
+}
+.sub-route{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: red;
+}
+.filter-wrapper{
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    margin-bottom: 23px;
+}
+
+button.filters {
+    width: 144px;
+    height: 49px;
+    border: 1px solid #DDE2EC;
+    border-radius: 10px;
+    background: white;
+    outline: none;
+    color: #6F6F9C;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+    img {
+        margin-left: 12px;
+    }
+}
+
+.side-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 30px;
+    width: 430px;
+    max-width: 100%;
+    transform: translate(100%,0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba($color: #000241, $alpha: 0.05);
+    overflow: auto;
+    &.open{
+        transform: translate(0,0);
+    }
+    .close-row{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .close-btn{
+        $offset: 52px;
+        height: $offset;
+        width: $offset;
+        background: #E6ECF3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 50%;
+    }
+    .input-title{
+        font-size: 18px;
+        color: #626688;
+        margin: 24px 0 8px 0;
+    }
+    .input{
+        border: 1px solid #E2E7F3   ;
+    }
+    .btn{
+        width: 100%;
+        background: #626688;
+        border-radius: 9px;
+        font-size: 17px;
+        font-weight: normal;
+        color: white;
+        height: 45px;
+        margin-top: 40px;
+    }
+}
+// select box style
+::v-deep #select-box{
+    color: #2a4a76;
+    box-shadow: 0 5px 20px rgba(1, 5, 129, 0.1);
+    .selected{
+        width: 100%;
+        .arrow{
+            margin-left: auto;
+        }
+    }
+    .option-box{
+        button.option{
+            text-align: left;
+            padding: 10px 15px;
+        }
+    }
+}

@@ -1,0 +1,165 @@
+// buttons and links
+// common styles
+button{
+    cursor: pointer;
+}
+a.plane{
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.bt_blank{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.bt_round{
+    border-radius: 50%;
+}
+// HEADER
+    .logo_link{
+        width: 200px;      
+        img{
+            height: 35px;
+            margin-top: 10px;
+        }
+    }
+    .nav_toggle{
+        background: #fff;
+        background: #eaf0fc;
+        @include sm{
+            background: transparent;
+            color: white;
+        }
+    }
+    .nav_size{
+        height: 40px;
+        width: 40px;;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color:#798ca5;
+        background: #eaf0fc;
+        border: 4px solid #f7f9fd;
+    }
+    .bt_blue{
+        background:#eaf0fc;
+        color: #798ca5;
+        &.mr{
+            margin-right: 10px;
+        }
+        @include sm{
+            background: transparent;
+        }
+    }
+// END HEADER
+
+// SIDE MENU
+    .menu_link{
+        font-size: 1rem;
+        padding: 20px 45px 20px 30px;
+        display: block;
+        margin: 0 0 10px 0;
+        border-radius: 0 30px 30px 0;
+        color: #656479;
+        font-weight: 700;
+        background: transparent;
+        display: flex;
+        font-size: 14px;
+        font-weight: 700;
+        transition: color 0.3s ease;
+        white-space: nowrap;
+        text-decoration: none;
+        &.router-link-exact-active,&:hover{
+            color: #fff;
+            background: #0400af;
+            box-shadow: -12px -8px 13px -2px #fffc, 5px 6px 10px -5px #00000026;
+        }
+    }
+// END SIDE MENU
+
+// Popup
+.bt_smooth{
+    border: 0;
+    box-shadow: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 30px;
+    min-width: 150px;
+    text-transform: capitalize;
+    color: white;
+}
+// Loader button
+$loaderOffset:10px;
+button.loader{
+    position: relative;
+    &:active,&:focus{
+        outline: none;
+    }
+    &.loading{
+        color: transparent !important;
+        user-select: none !important;
+        cursor: not-allowed !important;
+        &::after{
+            content: '';
+            position: absolute;
+            top: calc(50% - 5px);
+            left: calc(50% - 5px);
+            height: $loaderOffset;
+            width: $loaderOffset;
+            background: transparent;
+            border-radius: 50%;
+            border-top: 3px solid $loaderP1;
+            border-right: 3px solid $loaderP2;
+            border-bottom: 3px solid $loaderP3;
+            border-left: 3px solid $loaderP4;
+            animation: 1s roll infinite linear;
+        }
+    }
+}
+@keyframes roll{
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
+// dashboard
+.dh-bt{
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    width: 200px;
+    background: #59b244;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;;
+    &.money{
+        background: #fc4556;
+    }
+    &.disabled{
+        opacity: 0.4;
+        cursor: not-allowed;
+        &:active,&:focus{
+            outline: none;
+            border: none;
+            box-shadow: none;
+        }
+    }
+}
+a.forgot_pwd{
+    margin-top: 15px;
+    color: #aaa;
+    font-size: 14px;
+    text-decoration: none;
+    &:hover{
+        color: #444;
+        text-decoration: none;
+    }
+    &:visited{
+        color: #d43724;
+    }
+}

@@ -1,0 +1,54 @@
+.wrapper {
+  ul {
+    li {
+      display: flex;
+      background-color: white;
+      padding: 10px 20px;
+      justify-content: space-between;
+      border-radius: 3px;
+      box-shadow: 0 0 10px -4px #ACAFC5;
+
+      .icon {
+        width: 20px;
+        margin-right: 20px;
+
+        .icon-tray {
+          color: #9BA5BE;
+          position: relative;
+        }
+
+        .indicator {
+          padding: 3px;
+          background: #FC5D83;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          bottom: 10px;
+          right: -2px;
+        }
+      }
+
+      .head {
+        width: 200px;
+        margin-right: 20px;
+        color: #48486e;
+      }
+
+      .timestamp {
+        width: 100px;
+        color: #fc5d83;
+        text-align: right;
+      }
+
+      .body {
+        width: calc(100% - 320px);
+        margin-right: 20px;
+        color: #9BA5BE;
+      }
+
+      +li {
+        margin-top: 10px;
+      }
+    }
+  }
+}

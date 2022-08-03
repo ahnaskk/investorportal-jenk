@@ -1,0 +1,83 @@
+@import '~/mixins.scss';
+
+.statement-box{
+    position: relative;
+    margin-top: 80px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    background: #F8FBFF;
+    @include xl{
+        width: 50%;
+        margin-left: 70px;
+    }
+    @include lg{
+        width: 100%;
+        margin-left: 0;
+    }
+    .download-img{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        $offset:123px;
+        height: $offset;
+        width: $offset;
+    }
+    .content-box{
+        text-align: center;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 72px 0 20px;
+        border-radius: 10px;
+        .title{
+            font-size: 24px;
+            font-weight: bold;
+            color: #2A4A76;
+            @include xs{
+                font-size: 18px;
+            }
+        }
+        .on{
+            font-size: 16px;
+            font-weight: normal;
+            color: #9C9FB4;
+            margin: 8px 0 18px;
+            @include xs{
+                font-size: 13px;
+            }
+        }
+        .range{
+            background: #F8FBFF;
+            padding: 10px 35px;
+            font-size: 17px;
+            font-weight: normal;
+            color: #7A88EE;
+            @include xs{
+                font-size: 13px;
+            }
+        }
+    }
+    .action{
+        padding: 16px 15px 15px;
+        .view-all{
+            text-decoration: none;
+            color: #1A3757;
+            font-size: 16px;
+            font-weight: bold;
+            &:visited{
+                color: #FF6977;
+            }
+            .angle{
+                color: black;
+                position: relative;
+                top: 2px;
+                left: 1px;
+                font-size: 18px;
+            }
+        }
+    }
+}

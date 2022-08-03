@@ -1,0 +1,27 @@
+.info-card{
+    background: #FCFDFF;
+    border-radius: inherit;
+    height: 100%;
+}
+.card-header{
+    padding: 25px;
+    display: flex;
+    .icon{
+        margin-right: 15px;
+    }
+    .label{
+        font-size: 16px;
+        font-weight: normal;
+        color: #7E8198;
+    }
+    .date{
+        font-size: 22px;
+        color: #124988;
+    }
+}
+.slot-outer{
+    padding: 25px;
+    border: 1px solid #EFF4F9;
+    border-radius: inherit;
+    min-height: 100%;
+}

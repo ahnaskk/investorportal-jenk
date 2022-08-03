@@ -1,0 +1,59 @@
+.dataTable{background-color: #fff;}
+.grid{width: 100%;float: left;}
+.padBtmMd{padding-bottom: 20px;}
+.dash .dataTable{width: 100% !important;}
+.headerTime .navbar-custom-menu{margin-top: 15px;}
+.headerTime .navbar-custom-menu ul li{color: #fff;}
+.sideBarIcon {width: 23px;height: 16px;display: inline-block;top: 3px;position: relative;}
+.investorIcon{background: url('img/investorIcon.png') no-repeat;    transition: transform .5s ease;}
+.adminIcon{background: url('img/adminIcon.png') no-repeat;     transition: transform .5s ease;}
+.merchantsIcon{background: url('img/merchantsIcon.png') no-repeat;     transition: transform .5s ease;}
+.paymntGnrte{margin-top: 15px;float: left;display: block;float: right;     transition: transform .5s ease;}
+.dataTable{width: 100% !important;    transition-property: top,bottom,width;
+    transition-duration: .2s,.2s,.35s;
+    transition-timing-function: linear,linear,ease;}
+.paymntHdng h2{margin-bottom: 20px;margin-top: 20px;}
+.mrchntVwDetails{margin-top: 15px;}
+.mrchntVwDetails tr td{border: none !important;}
+.tblActn, .dataDel{width: auto;float: left;display: block;margin-right: 8px;margin-bottom: 10px;}
+.dataDel form input{float: left;}
+.tdActnPending{display: block;width: 60%;float: left;margin-right: 10px;}
+.grid form .tdActnPending{width: auto;}
+.tdActnUpdate{display: inline-block;float: left;}
+.box-body{background-color: #fff; height: 100%;}
+.main-footer{width: 100%;float: left;}
+.content .box{margin-bottom: 30px;display: inline-block;}
+.box-footer .btn{margin-left: 15px;}
+.content{width: 100%;float: left;background-color: #ecf0f5;}
+td a.btn{margin-right: 5px;margin-bottom: 5px;}
+
+
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>h5 {
+    padding: 0;
+    margin: 0 0 0 4px;
+    color: #444444;
+    font-size: 15px;
+    position: relative
+}
+
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a>h5>small {
+    color: #999999;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    right: 0
+}
+.navbar-nav>.messages-menu>.dropdown-menu>li .menu>li>a> .notify {
+    margin: 0 0 0 4px;
+    font-size: 12px;
+    color: #888888;
+}
+.errors {
+
+      color: red;     
+
+   }
+   
+   .validate_star{
+       color: red;
+   }

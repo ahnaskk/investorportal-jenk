@@ -1,0 +1,105 @@
+/*! CSS Used from: /bower_components/admin-lte/dist/css/AdminLTE.min.css */
+*{box-sizing:border-box;}
+.content{min-height:250px;padding:15px;margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px;}
+.form-control{border-radius:3px;box-shadow:none;border-color:#d2d6de;}
+.form-control:focus{border-color:#3c8dbc;box-shadow:none;}
+.form-control::-moz-placeholder,.form-control:-ms-input-placeholder,.form-control::-webkit-input-placeholder{color:#bbb;opacity:1;}
+.form-control:not(select){-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+.box{position:relative;border-radius:3px;background:#ffffff;border-radius:5px;-webkit-box-shadow:0 1px 20px 0 rgba(69, 90, 100, 0.08);box-shadow:0 1px 20px 0 rgba(69, 90, 100, 0.08);margin-bottom:20px;width:100%;}
+.box.box-primary{border-top-color:#3c8dbc;}
+.box-body:before,.box-body:after{content:" ";display:table;}
+.box-body:after{clear:both;}
+.box-body:before,.box-body:after{content:" ";display:table;}
+.box-body:after{clear:both;}
+.box-body{border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:3px;border-bottom-left-radius:3px;padding:10px;}
+.btn{border-radius:3px;-webkit-box-shadow:none;box-shadow:none;border:1px solid transparent;}
+.active{background-color:#3c8dbc;color:#fff!important;}
+.btn:active{-webkit-box-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);-moz-box-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);box-shadow:inset 0 3px 5px rgba(0, 0, 0, 0.125);}
+.btn:focus{outline:none;}
+.btn-default{background-color:#f4f4f4;color:#444;border-color:#ddd;}
+.btn-default:hover,.btn-default:active{background-color:#e7e7e7;}
+.btn-primary{background-color:#3c8dbc;border-color:#367fa9;}
+.btn-primary:hover,.btn-primary:active{background-color:#367fa9;}
+.box-body{padding-top:2%;overflow:hidden!important;box-sizing:border-box!important;}
+*,::after,::before{-webkit-box-sizing:border-box;box-sizing:border-box;}
+.content .box{box-sizing:border-box;}
+.content .box{padding-bottom:16px;}
+@media screen and (max-width: 1330px){
+@media screen and (max-width: 650px){
+table{max-width:100vw;border-collapse:collapse;}
+}
+.form-control[readonly]{background-color:#fff!important;}
+}
+/*! CSS Used from: /bower_components/bootstrap/dist/css/bootstrap.min.css */
+section{display:block;}
+input{margin:0;font:inherit;color:inherit;}
+input::-moz-focus-inner{padding:0;border:0;}
+input{line-height:normal;}
+input[type=checkbox]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0;}
+table{border-spacing:0;border-collapse:collapse;}
+td,th{padding:0;}
+@media print{
+*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+thead{display:table-header-group;}
+tr{page-break-inside:avoid;}
+}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+input{font-family:inherit;font-size:inherit;line-height:inherit;}
+.col-md-12{position:relative;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:992px){
+.col-md-12{float:left;}
+.col-md-12{width:100%;}
+}
+table{background-color:transparent;}
+th{text-align:left;}
+label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:700;}
+input[type=checkbox]{margin:4px 0 0;margin-top:1px\9;line-height:normal;}
+input[type=checkbox]:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+.form-control{display:block;width:100%;height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
+.form-control:focus{border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);}
+.form-control::-moz-placeholder{color:#999;opacity:1;}
+.form-control:-ms-input-placeholder{color:#999;}
+.form-control::-webkit-input-placeholder{color:#999;}
+.form-control::-ms-expand{background-color:transparent;border:0;}
+.form-control[readonly]{background-color:#eee;opacity:1;}
+.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:4px;}
+.btn.active:focus,.btn:active:focus,.btn:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+.btn:focus,.btn:hover{color:#333;text-decoration:none;}
+.btn.active,.btn:active{background-image:none;outline:0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125);}
+.btn-default{color:#333;background-color:#fff;border-color:#ccc;}
+.btn-default:focus{color:#333;background-color:#e6e6e6;border-color:#8c8c8c;}
+.btn-default:hover{color:#333;background-color:#e6e6e6;border-color:#adadad;}
+.btn-default.active,.btn-default:active{color:#333;background-color:#e6e6e6;border-color:#adadad;}
+.btn-default.active:focus,.btn-default.active:hover,.btn-default:active:focus,.btn-default:active:hover{color:#333;background-color:#d4d4d4;border-color:#8c8c8c;}
+.btn-default.active,.btn-default:active{background-image:none;}
+.btn-primary{color:#fff;background-color:#337ab7;border-color:#2e6da4;}
+.btn-primary:focus{color:#fff;background-color:#286090;border-color:#122b40;}
+.btn-primary:hover{color:#fff;background-color:#286090;border-color:#204d74;}
+.btn-primary:active{color:#fff;background-color:#286090;border-color:#204d74;}
+.btn-primary:active:focus,.btn-primary:active:hover{color:#fff;background-color:#204d74;border-color:#122b40;}
+.btn-primary:active{background-image:none;}
+/*! CSS Used from: https://investment.test/admin.css */
+.box-body{background-color:#fff;height:100%;}
+.content .box{margin-bottom:30px;display:inline-block;}
+.content{width:100%;float:left;background-color:#ecf0f5;}
+/*! CSS Used from: Embedded */
+.leander-act{border-collapse:collapse;width:100%;}
+td,th{border:1px solid #dddddd;text-align:left;padding:5px;}
+.leander-act .form-control{background:0;border:0;font-size:13px;font-weight:600;color:#00000099;}
+/*! CSS Used from: https://investment.test/css/bootstrap-toggle.min.css */
+.toggle{position:relative;overflow:hidden;}
+.toggle input[type=checkbox]{display:none;}
+.toggle-group{position:absolute;width:200%;top:0;bottom:0;left:0;transition:left .35s;-webkit-transition:left .35s;-moz-user-select:none;-webkit-user-select:none;}
+.toggle.off .toggle-group{left:-100%;}
+.toggle-on{position:absolute;top:0;bottom:0;left:0;right:50%;margin:0;border:0;border-radius:0;}
+.toggle-off{position:absolute;top:0;bottom:0;left:50%;right:0;margin:0;border:0;border-radius:0;}
+.toggle-handle{position:relative;margin:0 auto;padding-top:0;padding-bottom:0;height:100%;width:0;border-width:0 1px;}
+.toggle.btn{min-width:59px;min-height:34px;}
+.toggle-on.btn{padding-right:24px;}
+.toggle-off.btn{padding-left:24px;}
+/*! CSS Used from: Embedded */
+.page_speed_313624098{width:96%;margin:0 auto;}
+.page_speed_2119495073{border-bottom:2px solid #0605053d;}
+.page_speed_136899009{width:11%;height:100%;}
+.page_speed_399683581{width:17%;text-align:center;}

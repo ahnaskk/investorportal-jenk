@@ -1,0 +1,94 @@
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items:center;
+    padding: 100px;
+    .wrapper{
+        display: flex;
+        width: 800px;
+        margin-top: 40px;
+        padding: 40px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px rgb(1 5 129 / 5%);
+        flex-direction: column;
+        .head{
+            text-align: center;
+            padding: 0;
+            font-size: 1.5em;
+            color: #48486E;
+            margin: 0 0 0.5rem 0;
+        }
+        label{
+            font-size: 1.1em;
+            text-align: center;
+            color: #48486e61;
+        }
+        button{
+            margin-bottom: 1em;
+            align-self: center;
+        }
+        a{
+            align-self: center;
+            color: #3246D3;
+        }
+        .otp-wrapper{
+            margin: 2.5em -10px;
+            display: flex;
+            justify-content: center;
+        }
+        .rcode-wrapper{
+            display: flex;
+            justify-content: center;
+            .rcode{
+                width: 600px;
+                height: 52px;
+                padding: 0 10px;
+                margin: 2em 0;
+                border: none;
+                border-radius: 10px;
+                font-size: 16px;
+                color: #9C9FB4;
+                box-shadow: 0 5px 20px rgb(1 5 129 / 5%);
+                &.error {
+                    border:1px solid red;
+                }
+            }
+        }
+    }
+    img{
+        width: 200px;
+        align-self: center;
+        margin-bottom: 1em;
+    }
+    p.error{
+        text-align: center;
+        color: red;
+    }
+}
+
+::v-deep .otp-input {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 10px;
+    border-radius: 0;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #48486e61;
+    box-shadow: 0px 0px 7px 0px #51434114;
+    text-align: center;
+    &.error {
+      border-color: red !important;
+    }
+}
+::v-deep .otp-input::-webkit-inner-spin-button,
+::v-deep .otp-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

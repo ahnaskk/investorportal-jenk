@@ -1,0 +1,32 @@
+aside.breadcrumb {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-title {
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 27px;
+    color: #131D61;
+    font-weight: normal;
+}
+
+.bd-list {
+    display: flex;
+    color: #B2B2C6;
+    font-size: 13px;
+    text-transform: capitalize;
+
+    .divider {
+        margin: 0 8px;
+    }
+
+    .bd-item {
+        &:hover {
+            color: #7272a0;
+        }
+    }
+}
+

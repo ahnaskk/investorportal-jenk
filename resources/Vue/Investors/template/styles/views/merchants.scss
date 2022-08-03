@@ -1,0 +1,29 @@
+@import '~/mixins.scss';
+
+.table-section{
+    margin-top: 60px;
+    table{
+        tr{
+            td,th{
+                white-space: normal;
+                line-height: 22px;
+                max-width: 100px;
+                @include sm{
+                    max-width: 100%;
+                }
+            }
+            th{
+                vertical-align: baseline;
+            }
+        }
+    }
+}
+
+.vertical_text{
+    writing-mode: vertical-rl;
+	-ms-transform: rotate(211deg); /* IE 9 */
+	transform    : rotate(211deg);
+}
+div.vertical_scroll_class {
+    overflow-x: scroll;
+}

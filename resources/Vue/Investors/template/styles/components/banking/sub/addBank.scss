@@ -1,0 +1,89 @@
+@import '~/mixins.scss';
+.form-outer{
+    background: #EFF4F9;
+    padding: 47px 53px;
+    border-radius: 30px;
+    width: 620px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+    .label{
+        margin: 0 0 14px 0;
+        font-size: 16px;
+        font-weight: bold;
+        color: #48486E;
+    }
+    .input{
+        height: 50px;
+        background: white;
+        padding: 0 20px;
+        &.read-only{
+            cursor: not-allowed;
+        }
+    }
+}
+
+.type-input{
+    display: flex;
+    .input-row{
+        display: flex;
+        align-items: center;
+        margin: 0 -10px;
+        .col{
+            padding: 0 10px;
+        }
+        .type{
+            display: flex;
+            align-items: center;
+            .label{
+                margin: 0 13px 0 0;
+            }
+        }
+    }
+}
+
+.check-box,
+.label {
+    user-select: none;
+    cursor: pointer;
+}
+
+.check-box {
+    $ofst: 20px;
+    height: $ofst;
+    width: $ofst;
+    font-size: 13px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #D5D5D5;
+    color: #EEEFF6;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 13px;
+    &.active {
+        $cl: #3246D3;
+        border-color: $cl;
+        background: $cl;
+        color: #fff;
+    }
+}
+
+.submit-row{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    .blue-bt{
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.error-msg{
+    margin-bottom: 0;
+}

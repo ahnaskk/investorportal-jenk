@@ -1,0 +1,134 @@
+@import '~/mixins.scss';
+
+.rates-card{
+    width: 100%;
+    background: #3246D3;
+    border-radius: inherit;
+
+}
+.corp-info{
+    padding: 30px 25px;
+    display: flex;
+    .icon-box{
+        margin-right: 15px;
+        @include sm{
+            img{
+                width: 80px;
+            }
+        }
+        @include xs{
+            img{
+                width: 50px;
+            }
+        }
+    }
+    .data-box{
+        .corp-name{
+            font-size: 22px;
+            color: white;
+            @include sm{
+                font-size: 18px;
+            }
+            @include xs{
+                font-size: 14px;
+            }
+        }
+        .funded{
+            font-size: 28px;
+            color: #C6FF70;
+            .label{
+                font-size: 16px;
+                font-weight: normal;
+                color: #fff;
+            }
+        }
+        .active-advance{
+            background: #FCFDFF;
+            padding: 0 20px;
+            border: 1px solid #EBEFF4;
+            font-size: 16px;
+            font-weight: bold;
+            color: #7E8198;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 7px;
+            $offset:30px;
+            line-height: $offset;
+            height: $offset;
+        }
+    }
+}
+.rates{
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 35px;
+    .title-box{
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .icon{
+        margin-right: 20px;
+        img{
+            @include xs{
+                width: 40px;
+            }
+        }
+    }
+    .titles{
+        .label{
+            font-size: 17px;
+            font-weight: normal;
+            color: #8A8FB4; 
+        }
+        .title{
+            font-size: 20px;
+            color: #2A4A76;
+            @include sm{
+                font-size: 18px;
+            }
+            @include xs{
+                font-size: 13px;
+            }
+        }
+    }
+    // rates
+    .rates-row{
+        display: flex;
+        margin: -12px;
+        flex-wrap: wrap;
+        .rate-col{
+            padding: 12px;
+            width: 50%;
+            min-width: 260px;
+            flex-grow: 1;
+        }
+    }
+    .rate-box{
+        border: 1px solid #EBEFF4;
+        border-radius: 10px;
+        padding: 13px 17px;
+        display: flex;
+        .icon{
+            margin-right: 15px;
+        }
+        .titles{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .label{
+            color: #7E8198;
+            font-size: 16px;
+            font-weight: normal;
+        }
+        .value{
+            font-size: 22px;
+            font-weight: bold;
+            color: #124988;
+            @include sm{
+                font-size: 18px;
+            }
+        }
+    }
+}

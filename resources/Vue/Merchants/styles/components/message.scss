@@ -1,0 +1,16 @@
+#message-component{
+    $border: 1px solid $light_grey;
+    border-bottom: $border;
+    // border-top: $border;
+    background: #fff;
+    margin: 0 0 2px 0;
+    &:first-of-type{
+        border-top: $border;
+    }
+    .title_sec{
+        padding: 0 0 10px 0;
+    }
+    h3.title,p.date,p.message_text{
+        margin: 0;
+    }
+}

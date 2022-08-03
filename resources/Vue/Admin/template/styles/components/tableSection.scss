@@ -1,0 +1,164 @@
+@import '~a/mixins.scss';
+.table-sec{
+    .table-wrapper{
+        margin-bottom: 20px;
+        overflow: auto;
+        @include xs{
+            overflow-x: scroll;
+        }
+    }
+}
+// table header
+.table-header{
+    .filters{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        color: #8F8FB1;
+        @include xs{
+            flex-direction: column-reverse;
+        }
+    }
+    .date-selector{
+        display: flex;
+        margin: -17px;
+        flex-wrap: wrap;
+        .input-col{
+            padding: 17px;
+            flex: 0 0 auto;
+            width: 28%;
+            @include lg{
+                width: 50%;
+            }
+            @include sm{
+                width: 100%;
+            }
+            &.bt-col{
+                display: flex;
+                align-items: flex-end;
+                width: 16%;
+                @include lg{
+                    width: 50%;
+                }
+                @include sm{
+                    width: 100%;
+                }
+                .blue-bt{
+                    width: 100%;
+                }
+            }
+            &.hr{
+                width: 100%;
+                .hr{
+                    padding-bottom: 43px;
+                    border-bottom: 1px solid #E7EDF3;
+                    margin-bottom: 20px;
+                }
+            }
+            .input-title{
+                font-size: 17px;
+                color: #48486E;
+            }
+            .input{
+                margin-top: 14px;
+            }
+            input.input{
+                padding-left: 20px;
+            }
+        }
+    }
+    .filter-box{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        .select-box{
+            margin: 0 10px;
+        }
+    }
+    .search-box{
+        display: flex;
+        align-items: center;
+        @include xs{
+            margin-bottom: 25px;
+            white-space: nowrap;
+        }
+        form{
+            margin-left: 13px;
+        }
+        
+    }
+    .search-input{
+        $line:40px;
+        height: $line;
+        line-height: $line;
+        width: 234px;
+        background: white;
+        border: none;
+        border-radius: 10px;
+        color: inherit;
+        padding: 0 15px;
+        box-shadow: 0 5px 20px rgba($color: #010581, $alpha: 0.05);
+    }
+}
+// table pagination
+.table-footer{
+    display: flex;
+    justify-content: space-between;
+    @include md{
+        flex-direction: column;
+    }
+    .table-info{
+        font-size: 15px;
+        font-weight: normal;
+        color: #8F8FB1;
+        @include md{
+            margin-bottom: 20px;
+        }
+    }
+    ::v-deep .paginator{
+        display: flex;
+        margin: 0 -5px;
+        li{
+            font-size: 14px;
+            font-weight: bold;
+            color: #8286A5;
+            background: white;
+            text-align: center;
+            margin: 0 5px;
+            border-radius: 5px;
+            user-select: none;
+            a{  
+                $offset: 33px;
+                height: $offset;
+                width: $offset;
+                line-height: $offset;
+                display: block;
+            }
+            &.disabled,&.prev,&.next{
+                background: none;
+            }
+            &.active{
+                box-shadow: 0 3px 6px rgba($color: #08007A, $alpha: 0.13);
+            }
+        }
+    }
+}
+
+table{
+    border-collapse: collapse;
+    thead{
+        tr,th{
+            background-color: #F6F8FB;
+        }
+    }
+    tbody{
+        tr:nth-child(even){
+            background-color: #FBFCFE;
+            border-top: 1px solid rgba(2,7,68,0.05);
+            border-bottom: 1px solid rgba(2,7,68,0.05);
+            td{
+             background-color: #FBFCFE;
+            }
+        }
+    }
+}

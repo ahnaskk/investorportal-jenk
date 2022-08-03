@@ -1,0 +1,39 @@
+@import '~/mixins.scss';
+.wrapper{
+    display: flex;
+    justify-content: center;
+    .form-outer{
+        background: #EFF4F9;
+        padding: 47px 53px;
+        border-radius: 30px;
+        width: 800px;
+        max-width: 100%;
+        margin-bottom: 30px;
+        @include xs {
+            padding: 47px 20px;
+        }
+        .form-group{
+            input{
+                padding: 0 20px;
+            }
+            +.form-group{
+                margin-top: 20px;
+            }
+        }
+        span.mandatory{
+            color: #ff4a4a;
+        }
+        h4{
+            margin: 0 0 14px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #48486E;
+        }
+        .submit-row{
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+    }
+}

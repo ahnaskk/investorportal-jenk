@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    flex-direction: column;
+    .empty{
+        font-size: 24px;
+        color: #48486E;
+    }
+    .back{
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,143 @@
+@import '~/mixins.scss';
+
+.dashboard-row {
+    display: flex;
+    margin: 0 -24px;
+    @include xl{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .col {
+        padding: 0 24px;
+        @include xl{
+            padding: 0;
+        }
+        &.overview {
+            width: 70%;
+            @include xxxl{
+                width: 65%;
+            }
+            @include xl{
+                width: 100%;
+            }
+        }
+
+        &.payments {
+            width: 30%;
+            @include xxxl{
+                width: 35%;
+            }
+            @include xl{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// left col
+.page-title-sec {
+    .title {
+        font-size: 24px;
+        color: #48486E;
+        font-weight: bold;
+        margin: 0;
+        @include sm{
+            font-size: 22px;
+        }
+        .info {
+            font-weight: normal;
+            font-size: 17px;
+            color: #B2B2C6;
+            margin-left: 17px;
+            @include sm{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.info-row {
+
+    display: flex;
+    margin: 23px -22px 48px;
+    @include hidpi2{
+        flex-direction: column;
+    }
+    @include sm{
+        margin: 23px 0 48px;
+    }
+    .col {
+        padding: 0 22px;
+        @include sm{
+            padding: 0;
+        }
+        &.left {
+            width: 65%;
+            @include hidpi2{
+                width: 100%;
+            }
+        }
+
+        &.right {
+            width: 35%;
+            @include hidpi2{
+                width: 100%;
+                margin-top: 48px;
+            }
+        }
+    }
+}
+
+.graph-row {
+    margin: 23px -22px 48px;
+    display: flex;
+    @include xxxl{
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+    .col{
+        width: 50%;
+        @include xxxl{
+            width: 100%;
+            padding: 0;
+            +.col{
+                margin-top: 48px;
+            }
+        }
+    }
+}
+
+
+.view-all-bt {
+    $bth: 41px;
+    border: none;
+    outline: none;
+    background: #E7EFF6;
+    color: #9599B5;
+    width: 117px;
+    height: $bth;
+    padding: 0;
+    text-align: center;
+    line-height: $bth;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+
+    @include xs {
+        width: 95px;
+        height: 34px;
+        line-height: 33px;
+        font-size: 12px;
+    }
+}
+
+.radial{
+    height: 100%;
+    .graph-container{
+        // display: flex;
+        height: 100%;
+        // align-items: center;
+    }
+    
+}

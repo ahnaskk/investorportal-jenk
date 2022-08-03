@@ -1,0 +1,29 @@
+@import '~/mixins.scss';
+
+section.section-wrapper {
+    min-height: 100vh;
+    &.layout-app {
+        padding: 0 40px;
+        background: #F6F8FB;
+        @include xxl{
+            padding: 0 20px;
+        }
+        @include sm{
+            padding: 0 10px;
+        }
+    }
+
+    .layout-wrapper {
+        &.app {
+            max-width: 100%;
+            width: 1840px;
+            margin: 0 auto;
+        }
+
+        .main-view-slot {
+            &.hidden{
+                display: none;
+            }
+        }
+    }
+}

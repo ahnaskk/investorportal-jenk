@@ -1,0 +1,119 @@
+@import '~/mixins.scss';
+.agreement-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    line-height: 40px;
+    @include md{
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+.content-box{
+    width: 1200px;
+    min-width: 80%;
+    max-width: 90%;
+    height: 90%;
+    overflow: auto;
+    border: 10px solid white;
+    border-right: 0;
+    border-radius: 10px;
+    background: white;
+    position: relative;
+    .close-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        margin-bottom: -45px;
+    }
+}
+.sign-pad{
+    background: white;
+    padding: 20px;
+    height: 350px;
+    position: relative;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: inherit;
+        .msg{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+            color: #8a8a8a;
+            outline: 2px dashed;
+            outline-offset: -20px;
+            cursor: pointer;
+            user-select: none;
+            font-size: inherit;
+            &:hover{
+                background: #e8e8e8;
+            }
+        }
+    }
+    .canvas{
+        border: 2px dashed #ff6977;
+        height: 100%;
+        width: 100%;
+        ::v-deep canvas{
+            height: 100%!important;
+            width: 100%!important;
+        }
+    }
+}
+.control-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0 0;
+}
+.btn{
+    width: 100px;
+    color: white;
+    &.undo{
+        background-color: #ff6977;
+    }
+    &.save{
+        background-color: #14c765;
+        margin-top: auto;
+    }
+    &.credit-pay{
+        background: #3246D3;
+        margin: auto 20px 0 auto;
+        width: auto;
+    }
+}
+.submit-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px;
+    color: #515151;
+    position: relative;
+    .info{
+        margin: 0;
+        .bold{
+            font-weight: bold;
+        }
+    }
+    .signature-warning{
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 12px;
+        color: #ff4a4a;
+    }
+}

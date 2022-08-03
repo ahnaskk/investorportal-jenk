@@ -1,0 +1,99 @@
+// #B2BBD1
+@import '~merchant/mixins.scss';
+
+.invst-info-card {
+    background: #3246D3;
+    display: flex;
+    border-radius: inherit;
+    min-height: inherit;
+    height: 100%;
+    @include hidpi2{
+        flex-direction: column;
+    }
+    @include md{
+        flex-wrap: wrap;
+    }
+    .amounts {
+        width: auto;
+        padding: 28px 30px;
+        width: 30%;
+        @include hidpi2{
+            width: 100%;
+        }
+        @include sm{
+            width: 100%
+        }
+    }
+    
+}
+
+.invst-info {
+    &.principal {
+        margin-bottom: 10px;
+    }
+    &.list {
+        margin: -4px 0;
+
+        .info-li {
+            padding: 4px 0;
+
+            .bg-box {
+                padding: 11px 0 11px 25px;
+                background: linear-gradient(to right,rgba(0,0,0,.15) 15%, rgba(84,84,84,.15) );
+                border-radius: 10px;
+                min-height: 0;
+                height: auto;
+                .title {
+                    font-size: 15px;
+                    font-weight: normal;
+                    margin-bottom: 5px;
+                }
+                .sm {
+                    font-size: 15px;
+                }
+
+                .amount {
+                    font-size: 30px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    
+    .field-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white;
+        &.column{
+            flex-direction: column;
+        }
+        .greet{
+            color: #B2BBD1;
+            font-size: 15px;
+        }
+        .title{
+            color: #fff;
+            margin-top: 5px;
+        }
+    }
+
+    h3,
+    h2 {
+        margin: 0;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: normal;
+        color: #D1D6FF;
+    }
+
+    .amount {
+        color: white;
+    }
+}
+.grow{
+    flex-grow: 1;
+}
+

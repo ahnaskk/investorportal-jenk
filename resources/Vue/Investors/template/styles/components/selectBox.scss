@@ -1,0 +1,104 @@
+@import '~/mixins.scss';
+#select-box{
+    position: relative;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 5px 20px rgba($color: #010581, $alpha: 0.05);
+    border-radius: 10px;
+    color: inherit;
+    font-size: 16px;
+    &.with-icon{
+        justify-content: flex-start;
+        color: #9C9FB4;
+        .selected {
+            flex-grow: 1;
+            justify-content: flex-start;
+            .icon{
+                display: block;
+                margin: 0 18px 0 0;
+                img{
+                    @include xs{
+                        width: 15px;
+                    }
+                }
+            }
+            .arrow{
+                margin: 0 0 0 auto;
+                img{
+                    @include xs{
+                        width: 15px;
+                    }
+                }
+            }
+            .sort-by{
+                @include xs{
+                    font-size: 11px;
+                }
+            }
+        }
+        .filters{
+            padding-top: 20px;
+            border-top: 1px solid #E7EDF3;
+        }
+        .options-box button.option{
+            text-align: left;
+            padding-left: 15px;
+        }
+    }
+    .selected{
+        cursor: pointer;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding: 11px 15px 10px;
+        .icon{
+            display: none;
+        }
+        .info{
+            color: #878787;
+            font-size: 10px;
+        }
+        .divider{
+            columns: #878787;
+            margin: 0 5px;
+            font-size: 10px;
+        }
+        .arrow{
+            display: inline-block;
+            width: 15px;
+            text-align: right;
+            margin-left: 17px;
+            img{
+                transition: transform 0.2s ease;
+            }
+            &.open img{
+                transform: rotateZ(180deg);
+            }
+        }
+    }
+    .options-box{
+        position: absolute;
+        top: calc(100% + 1px);
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        &.closed{
+            height: 0;
+        }
+        button.option{
+            border: none;
+            background: white;
+            color:inherit;
+            font-size: inherit;
+            margin: 0;
+            padding: 10px 0;
+            border: 1px solid #eee;
+            border-top: none;
+            width: 100%;
+        }
+    }
+}

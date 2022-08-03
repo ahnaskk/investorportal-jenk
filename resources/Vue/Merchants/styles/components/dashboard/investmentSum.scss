@@ -1,0 +1,125 @@
+@import '~merchant/mixins.scss';
+.investment-sum-card{
+    padding: 25px;
+    background: white;
+    border-radius: 9px;
+    @include lg{
+        flex-flow: column;
+    }
+    @include sm{
+        padding: 15px;
+    }
+    .data-box{
+        background: #FFFFFF;
+        border-radius: 10px;
+        height: auto;
+        min-height: 0;
+        h2,h3{
+            margin: 0;
+        }
+        .amounts{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            .wrapper{
+                display: flex;
+                flex-direction: row;
+                flex-grow: 1;
+                height: 100%;
+                margin: 0 -10px;
+                @include lg{
+                    flex-flow: column;
+                }
+                .card{
+                    width: 33%;
+                    height: 100%;
+                    padding: 0 20px;
+                    margin: 0;
+                    @include lg{
+                        width: 100%;
+                    }
+                    .card-inner{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid #EFEFF7;
+                        padding: 20px;
+                        border-radius: 20px;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 15px 20px rgba(247,257,255,0.7);
+                        .icon-wrapper{
+                            $dia: 70px;
+                            height: $dia;
+                            width: $dia;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .icon{
+                                display: flex;
+                            }
+                            &.teal{
+                                background-color: #E1F1FF;
+                                box-shadow: 0 2px 60px #E1F1FF;
+                            }
+                            &.green{
+                                background-color: #DFFCF8;
+                                box-shadow: 0 0 60px #DFFCF8;
+                            }
+                            &.violet{
+                                background-color: #F3EEFB;
+                                box-shadow: 0 3px 60px #F3EEFB;
+                            }
+                        }
+                        .title{
+                            font-size: 15px;
+                            color: #9992B1;
+                        }
+                        .rate{
+                            color: #2F2164;
+                            font-weight: bold;
+                            font-size: 30px;
+                            margin: 5px 0;
+                        }
+                        
+                    }
+                    &+.card{
+                        @include lg{
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .title{
+            color: #9C9FB4;
+            font-size: 18px;
+            font-weight: normal;
+            @include xs{
+                font-size: 14px;
+            }
+        }
+        .amount{
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 5px;
+            color: #1B2F64;
+            @media screen and (max-width:1680px){
+                font-size: 24px;
+            }
+            @include xs{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+
+

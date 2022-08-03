@@ -1,0 +1,53 @@
+@import '~a/mixins.scss';
+
+section.section-wrapper {
+    min-height: 100vh;
+    &.layout-app {
+        padding: 0 20px;
+        background: #F7FAFF;
+        @include xxl{
+            padding: 0 20px;
+        }
+        @include sm{
+            padding: 0 10px;
+        }
+    }
+
+    .layout-wrapper {
+        &.app {
+            max-width: 100%;
+            width: 1840px;
+            margin: 0 auto;
+        }
+
+        .main-view-slot {
+            &.hidden{
+                display: none;
+            }
+        }
+    }
+}
+.main-wrapper{
+    display: flex;
+}
+.content-wrapper{
+    margin-left: 20px;
+    position: relative;
+    width: 100%;
+    max-width: calc(100% - 260px);
+    background-color: white;
+    padding: 30px 0 30px 30px;
+    border-top-left-radius: 20px;
+    box-shadow: 0px 0px 18px #1520b10d, 20vw 0px white;
+    &::after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 18px;
+        z-index: 1;
+        top: 0;
+        right: -18px;
+        display: block;
+        background-color: white;
+    }
+}

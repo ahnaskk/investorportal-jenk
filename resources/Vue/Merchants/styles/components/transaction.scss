@@ -1,0 +1,75 @@
+#transaction-view{
+    @include sm{
+        padding:0 10px;
+        .info-date .info_title{
+            color: white;
+        }
+    }
+}
+.info{
+    text-align: center;
+    width: 50%;
+    position: relative;
+    margin-top: 5px;
+    &:not(:last-of-type)::before{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-left: 1px solid #ccc;
+        z-index: 0;
+    }
+    &:not(:last-of-type)::after{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(50%,-50%);
+        display: block;
+        height: 10px;
+        width: 10px;
+        background: white;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+    }
+    h6{
+        margin: 0 0 5px;
+        font-size: 16px;
+    }
+    p{
+        margin: 0;
+        font-size: 13px;
+        // color: $grey;  
+    }
+}
+.info.info-date{
+    @include sm{
+        width: auto;
+        z-index: 1;
+        position: absolute;
+        bottom: 100%;
+        display: flex;
+        background: 
+        red;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        color:
+        white;
+        padding: 4px 10px;
+        font-size: 17px;
+        font-weight: 900;
+        border-radius: 5px;
+        &::after,&::before{
+            content: none;
+        }
+        p{
+            display: none;
+        }
+        h6{
+            margin: 0;
+            font-size: 13px;
+        }
+    }
+}

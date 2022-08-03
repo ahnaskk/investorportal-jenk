@@ -1,0 +1,11 @@
+.scroll-down-container{
+    position: fixed;
+    /* top: 0; */
+    right: 0;
+    left: 0;
+    display: flex;
+    bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

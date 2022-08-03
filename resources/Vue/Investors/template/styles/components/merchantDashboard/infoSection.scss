@@ -1,0 +1,35 @@
+@import '~/mixins.scss';
+.info-sum-row{
+    display: flex;
+    margin: -17px;
+    @include hidpi1{
+        flex-wrap: wrap;
+    }
+    .info-col{
+        padding: 17px;
+        &.overview{
+            width: 40%;
+            @include hidpi1{
+                width: 100%;
+            }
+        }
+        &.detail{
+            width: 20%;
+            @include hidpi1{
+                flex-grow: 1;
+            }
+            @include xl{
+                flex-grow: 1;
+            }
+            @include lg{
+                width: 100%;
+            }
+        }
+    }
+}
+.tile-box{
+    margin-bottom: 20px;
+    &.last{
+        margin-bottom: 0;
+    }
+}

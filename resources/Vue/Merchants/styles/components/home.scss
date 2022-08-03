@@ -1,0 +1,70 @@
+
+#home{
+    background: $theme_bg;
+    min-height: 100vh;
+}
+.contents{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    background-color: #181c3f;
+}
+.side_section{
+    width: 210px;
+    height: 100%;
+    transition: all 0.4s ease-out;
+    padding: 0 25px 0 0;
+    z-index: 1;
+    span{
+        transition: all 0.3s ease;
+        color: #fff;
+        font-weight: 400;
+    }
+    &.collapsed{
+        width: 90px;
+        padding: 0;
+        span{
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    @include md{
+        position: fixed;
+        top: 0;
+        background: $theme_bg;
+        padding-top: 90px;
+        transform: translateX(-100%);
+        &.collapsed{
+            transform: translateX(0);
+            width: 210px;
+            padding-top: 90px;
+            span{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.right{
+    width:auto;
+    // height: 100%;
+    background: #ebeff4;
+    flex-grow: 1;
+    border-radius: 5px 0 0 0;
+    overflow: hidden;
+    padding: 30px 35px 10px;
+    box-sizing: border-box;
+    z-index: 0;
+    @include md{
+        border-radius: 25px 25px 0 0;
+        padding: 20px;
+    }
+    @include sm{
+        padding: 20px 10px;
+    }
+}
+// router view container
+.router-view-container{
+    min-height: 50vh;
+    height: auto;
+}

@@ -1,0 +1,84 @@
+@import '~/mixins.scss';
+
+h3,
+h2 {
+    margin: 0;
+}
+
+.rates {
+    background: white;
+    border-radius: inherit;
+    padding: 28px 40px 28px 35px;
+    @media screen and (max-width: 1600px){
+        padding: 28px;
+    }
+    @include xs{
+        width: 100%;
+    }
+}
+
+.rate {
+    margin: -20px 0;
+
+    .info-li {
+        padding: 20px 0;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+}
+.info-li {
+    padding: 10px 0;
+
+    .rate-box {
+        display: flex;
+        align-items: center;
+
+        .icon {
+            width: 55px;
+            height: 55px;
+            background: #EEECFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin-right: 20px;
+            flex: 0 0 auto;
+            color: rgba($color: #000000, $alpha: 0.34);
+            font-size: 22px;
+        }
+
+        .field-title {
+            font-size: 16px;
+            font-weight: normal;
+            color: #9C9FB4;
+            display: flex;
+            .title{
+                font-weight: inherit;
+                font-size: inherit;
+                color: inherit;
+            }
+        }
+
+        .amount {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1B3D64;
+        }
+    }
+    span.hr{
+        background:  #F6F6F6;
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: -35px;
+    }
+    &:last-child{
+        span.hr{
+            display: none;
+        }
+    }
+}
+

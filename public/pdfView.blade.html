@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link href="css/pdf.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+
+<div class="weeekly-rp" style="width:100%; margin:0 auto; max-width:1300px;  padding:20px; ">
+
+<div class="repor-we clearfix" style="width: 1300px; display:inline-block; margin-top: 40px;">
+
+<div class="header-invest" style="background:#f0f0f0; display:inline-block; width: 100%; padding:3% 0; height: 60px;">
+   <img src="images/investor_pdf_logo.png" style="width:100%; max-width:300px; float:left;">
+   <img src="images/investor_pdf_logo2.png" style="width:100%; max-width:250px; float:right;">
+</div>
+          <h4 style="font-family: 'Open Sans', sans-serif; font-size:17px; font-weight: 600; padding-left: 10px;">Weekly Report of Investor: </h4>
+          <span style="float:left; margin-top: 30px;" class="clearfix">
+          <ul  style="padding:0; font-family: 'Open Sans', sans-serif; font-size:14px; color:#000; padding-left: 16px;">
+          <li><span style="padding-right:33px; font-size: 14px;margin-top: 180px; font-weight:400;">Invested Amount :</span>{{ FFM::dollar($invested_amount) }}</li>
+          <li><span style="padding-right:106px; font-size: 14px; font-weight:400;"> CTD  :</span> {{ FFM::dollar($ctd) }}</li>
+          <li><span style="padding-right:85px; font-size: 14px; font-weight:400;"> Liquidity  : </span>{{ FFM::dollar($cash_in_hands) }}</li>
+         <li><span style="padding-right:106px; font-size: 14px; font-weight:400;"> RTR  :</span>  {{ FFM::dollar($total_rtr) }}</li>               
+      </ul>
+</span>
+
+        @if($investorArray)
+
+        <div class="invet-det" style="float: right; padding-bottom: 40px; font-family: 'Open Sans', sans-serif; font-size: 14px;  padding-right: 85px; display: inline-block; ">
+            <ul>
+                <li><span style="padding-right:36px; font-size: 14px; text-align:left; font-weight:400;"> Blended Rate  :</span>  {{ FFM::percent($blended_rate) }}</li>
+                <li> <span style="padding-right:29px; font-size: 14px; text-align:left;">Investor Name   :</span>    {{ $investorArray['investor_name'] }}</li>
+                <li> <span style="padding-right:85px; font-size: 14px; text-align:left;">Email           :</span>    {{ $investorArray['email'] }}</li>
+                <li> <span style="padding-right:90px; font-size: 14px; text-align:left;">Date           :</span>    {{ date('m/d/Y',strtotime($investorArray['startDate'])) }} to {{ date('m/d/Y',strtotime($investorArray['endDate'])) }}</span></li> 
+              <!--   <li> <span style="padding-right:35px; font-size: 14px;">Investor Type   :</span>    {{ $investorArray['investor_type'] }}</li>
+                <li> <span style="padding-right:56px; font-size: 14px;">Brokerage       :</span>    {{ $investorArray['brokerage'] }}</li>
+                <li> <span style="padding-right:12px; font-size: 14px;">management_fee  :</span>    {{ $investorArray['management_fee'] }}</li> -->
+            </ul>
+        </div>
+
+    </div>
+
+<!--     <div class="clearfix" style="margin-top: 40px;">
+
+        <ul style="padding:0">
+            
+            <li style="float:left; padding:8px 15px; line-height:20px; margin-left: 5px; margin-right: 5px;  background:#ececec;  border-radius:3px;font-family: 'Open Sans', sans-serif; font-size: 14px; color:#423e8a ">Date of {{ date('m/d/Y',strtotime($investorArray['startDate'])) }} to {{ date('m/d/Y',strtotime($investorArray['endDate'])) }}</li> 
+            <li style="float:left; padding:8px 15px; line-height:20px; margin-right: 5px;background:#ececec;  border-radius:3px;font-family: 'Open Sans', sans-serif;font-size: 14px; color: #4b469e">Investor Name : {{ $investorArray['investor_name'] }} </li>
+            <li style="float:left; padding:8px 15px; line-height:20px; background:#ececec;  border-radius:3px;font-family: 'Open Sans', sans-serif;font-size: 14px; color: #423e8a ">Liquidity: {{ FFM::dollar($cash_in_hands) }} </li>
+
+        </ul>
+    </div> -->
+
+    @endif
+
+    <table width="100%" border="0" class="report-week clearfix table" style="margin-top:10px; border:1px solid #dbdbdb;" >
+        <tr style="font-family: 'Open Sans', sans-serif; font-size:13px; color:#000; background:#e6e6e6; font-weight:400; padding:300px 0;">
+            <th>Master_Sheet_Merchant</th>
+            <th>MID</th>
+            <th style="width:100px;">Date</th>
+            <th>Ledger Amount</th>
+            <th>Syndication Amount</th>
+            <th>MGMT FEE</th>
+            <th>Syndication fee</th>
+            <th>Net amount</th>
+        </tr>
+
+
+        <?php
+        $totDebited = 0;
+        $totLlc = 0;
+        $totSynd = 0;
+        $totMgm = 0;
+        $totSyndf = 0;
+        if ($merchants) {   
+
+            foreach ($merchants as $merchant) {
+                $totDebited += $debited = $merchant->participantPayment->sum('payment');
+
+                $totLlc += $llc = /* $merchant->participantPayment->sum('payment') - */ $merchant->participantPayment->sum('participant_share'); //todo llc round value bit diffrent from report page. 
+                $totSynd += $synd = $merchant->participantPayment->sum('participant_share') - $merchant->participantPayment->sum('syndication_fee') - $merchant->participantPayment->sum('mgmnt_fee');
+                $totMgm += $mgm = $merchant->participantPayment->sum('mgmnt_fee');
+                $totSyndf += $syndf = $merchant->participantPayment->sum('syndication_fee');
+                foreach ($merchant->participantPayment as $partPayment) { 
+            ?>
+
+                        <tr class="" style="font-family: 'Open Sans', sans-serif; font-size:14px;">
+                          
+                            <td>{{ $merchant->name }} </td>
+                            <td>{{ $partPayment->merchant_id }}</td>
+                            <td>{{ date('m/d/Y',strtotime($partPayment->payment_date))}}</td>
+                            <td>{{ FFM::dollar($partPayment->payment) }}</td>
+                            <td>{{ FFM::dollar($partPayment->participant_share) }}</td>
+                            <td>{{ FFM::dollar($partPayment->mgmnt_fee) }}</td>
+                            <td>{{ FFM::dollar($partPayment->syndication_fee) }}</td>
+                            <td>{{ FFM::dollar($partPayment->final_participant_share) }}</td>
+                        </tr> 
+
+
+                        <?php }
+                }
+          }
+       ?>
+     <tfoot align="right" style="font-family: 'Open Sans', sans-serif; font-size:15px;background: #515151;">
+        <tr><th style="color:#000; padding: 40px 10px; ">Total</th>
+        <th></th><th></th><th>{{ FFM::sr($totDebited) }}</th><th>{{ FFM::sr($totLlc) }}</th><th>{{ FFM::sr($totMgm) }}</th><th>{{ FFM::sr($totSyndf) }}</th><th>{{ FFM::sr($totSynd) }}</th></tr> 
+      </tfoot>
+   <ul style="padding:0; position:relative; top:-2%; box-sizing:border-box;" >
+
+           <li style="float:left; padding:10px 10px; min-width:600px; flex-basis: auto; margin-right:2px; margin-left: 10px; line-height:20px;font-family: 'Open Sans', sans-serif;font-size: 16px; color: #fff; background:#515151;">Total Leger Amount : {{ FFM::sr($totDebited) }} </li>
+            <li style="float:left; min-width:600px; flex-basis: auto; padding:10px 10px; line-height:20px; margin-left:2px;margin-right: 3px;  font-family: 'Open Sans', sans-serif; font-size: 16px; color:#fff;background:#515151; ">Total Syndication Amount : {{ FFM::sr($totLlc)}}</li> 
+            <li style="float:left; min-width:600px; flex-basis: auto; padding:10px 10px; line-height:20px;  margin-left:2 margin-right:5px;font-family: 'Open Sans', sans-serif;font-size: 16px; color: #fff;background:#515151">Total MGMT Fee : {{ FFM::sr($totMgm) }}</li>
+            <li style="float:left; min-width:600px; flex-basis: auto; padding:10px 10px; line-height:20px; font-family: 'Open Sans', sans-serif;font-size: 16px; color: #fff;background:#515151; margin-right: 2px;margin-left: 5px;">Total Syndication fee: {{ FFM::sr($totSyndf) }}</li>
+            <li style="float:left; min-width:600px; flex-basis: auto; padding:10px 10px; margin-left: 2px; line-height:20px; font-family: 'Open Sans', sans-serif;font-size: 16px; color: #fff;background:#515151;">Total Net amount: {{ FFM::sr($totSynd) }}</li>
+        </ul>
+    </table>
+
+
+     <!--   <div class="clearfix" style="margin-top:0px; padding-left: 8px;"> -->
+
+<!--   <div style="padding-top: 50px; padding-right: 20px;">
+   <div  style="font-family: 'Open Sans', sans-serif;  float:left; font-size:12px;  float: right;">*PAYMENT TRANSATION ON BANK</div>
+   <div  style="font-family: 'Open Sans', sans-serif;  float:left; font-size:12px;  margin: 0 10px; float: right;">*DOCUMENT ON WEB APPLICATION</div>
+<div  style="font-family: 'Open Sans', sans-serif;  float:left; font-size:12px; float: right;">*PROFILE EDIT ON WEB APPLICATION</div>
+</div> -->
+</div>
+
+</body>
+
+</html>
+
+

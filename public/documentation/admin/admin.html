@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investor Portal - Admin User Type</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,400;1,500&family=Poppins:ital,wght@0,400;0,700;1,400&family=Roboto+Slab:wght@800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="text/javascript" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <!-- ********************* Customized ************************** -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <!-- ----------- *********************************** ----------- -->
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row header-row">
+      <div class="col">
+        <h1 class="header-heading">INVESTOR PORTAL DOCUMENTATION</h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-2 col-sm-12 " id="SidenavCol">
+          <div class="sidenav">
+            <div class="logo">
+              <img src="../images/investor-new-logo.png" alt="logo">
+            </div>
+            <nav class="main-nav">
+              <!-- <script language="javascript" type="text/javascript" src="side-nav.txt"></script> -->
+              <ul class="main-nav-ul">
+                <li><a href="#"><i class="fas fa-home"></i>Admin Menu <span class="sub-arrow"></span></a>
+                  <ul class="inner-list-items">
+                    <li><a href="#investor">Accounts</a></li>
+                    <li><a href="#admin-sub2">Collection Users</a></li>
+                    <li><a href="#admin-sub3">Companies</a></li>
+                    <li><a href="#admin-sub4">Admin</a></li>
+                    <li><a href="#admin-sub5">Editor</a></li>
+                    <li><a href="#admin-sub6">Lender</a></li>
+                    <li><a href="#admin-sub7">Viewer</a></li>
+                    <li><a href="#admin-sub8">Roles And Permissions</a></li>
+                    <li><a href="#merchant">Merchant</a></li>
+                    <li><a href="#admin-sub9">Marketing Offers</a></li>
+                    <li><a href="#admin-sub10">Transaction</a></li>
+                    <li><a href="#admin-sub20">Reconciliation Request</a></li>
+                    <li><a href="#admin-sub21">Reconciliation Mail Log</a></li>
+                    <li><a href="#admin-sub11">Velocity Distribution</a></li>
+                    <li><a href="#admin-sub12">Merchant Batches</a></li>
+                    <li><a href="#admin-sub13">Payments</a></li>
+                    <li><a href="#admin-sub23">Investor ACH</a></li>
+                    <li><a href="#admin-sub14">Marketplace</a></li>
+                    <li><a href="#admin-sub15">Logs</a></li>
+                    <li><a href="#admin-sub16">Bank Details</a></li>
+                    <li><a href="#admin-sub17">Reconcile</a></li>
+                    <li><a href="#admin-sub18">Wires/ACH</a></li>
+                    <li><a href="#admin-sub22">Template Management</a></li>
+                  </ul>
+                </li>
+                <li><a href="reports.html"><i class="fas fa-chart-bar"></i>Reports<span class="sub-arrow"></span></a>
+                  <ul class="inner-list-items">
+                    <li><a href="reports.html#default">Default Rate</a></li>
+                    <li><a href="reports.html#report_sub1">Default Rate(Merchants)</a></li>
+                    <li><a href="reports.html#report_sub2">Delinquent Report</a></li>
+                    <li><a href="reports.html#report_sub4">Payment Left</a></li>
+                    <li><a href="reports.html#report_sub5">Lender Delinquent</a></li>
+                    <li><a href="reports.html#report_sub6">Profitability Report(65/20/15)</a></li>
+                    <li><a href="reports.html#report_sub7">Profitability Report(50/30/20)</a></li>
+                    <li><a href="reports.html#report_sub22">Profitability Report(50/30/20)- 2021</a></li>
+                    <li><a href="reports.html#report_sub8">Profitability Report(50/50)</a></li>
+                    <li><a href="reports.html#report_sub3">Investment Report</a></li>
+                    <li><a href="reports.html#report_sub9">Investor Assignment</a></li>
+                    <li><a href="reports.html#report_sub10"> Investor Re-Assignment</a></li>
+                    <li><a href="reports.html#report_sub11"> Liquidity</a></li>
+                    <li><a href="reports.html#report_sub12">Payment Report</a></li>
+                    <li><a href="reports.html#report_sub13">Revenue Recognition</a></li>
+                    <li><a href="reports.html#report_sub14">Transaction Report</a></a></li>
+                    <li><a href="reports.html#report_sub15">Accrued ROI Report</a></a></li>
+                    <li><a href="reports.html#report_sub16">Debt Investor Report</a></a></li>
+                    <li><a href="reports.html#report_sub17">Equity Investor Report</a></a></li>
+                    <li><a href="reports.html#report_sub18">Total Portfolio Earnings</a></a></li>
+                    <li><a href="reports.html#report_sub19">Overpayment Report</a></a></li>
+                    <li><a href="reports.html#report_sub20">Merchants Per Diff Report</a></a></li>
+                    <li><a href="reports.html#report_sub21">Velocity Profitability Report</a></a></li>
+                  </ul>
+                </li>
+                <li class="side-link"><a href="settings.html"><i class="fas fa-cog"></i>Settings</a></li>
+                <li class="side-link"><a
+                    href="https://docs.google.com/spreadsheets/d/1J0Js46_f-Kbftg-NG7Rz6PiknVGpdByhyfBy1DUuS_k/edit?usp=sharing"
+                    target="_blank"><i class="fas fa-users-cog"></i>Calculations</a></li>
+                <li class="side-link"><a href="../get-started/CommonlyUsedTerms.html" target="_blank"><i
+                      class="fas fa-cog"></i>Commonly Used Terms</a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+        <div class="col-lg-10 col-sm-12" id="mainContent">
+          <a href="" class="scrollUp">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="admin-index.html">Admin Functionalities</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Admin Features</li>
+            </ol>
+          </nav>
+          <div>
+            <div>
+              <h3 id="admin-content">Features of Admin User Type</h3>
+              <h5></i> Dashboard</h5>
+              <ul>
+                <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The screenshot of the admin dashboard
+                  is as below:
+                </li>
+
+                <img src="../images/admin/Dashboard_new.png" alt="Dashboard" width="900px">
+                <li class="inner-list-items"><i class="fas fa-chevron-right"></i> A company filter has been incorporated
+                  in the
+                  dashboard. According to the selection in the filter, the data in the
+                  dashboard is queried and displayed. The company filter is a dynamic feature and can be edited without
+                  editing the
+                  software.</li>
+                <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Label Filter has been provided wherein
+                  the dashboard values will be queried and displayed according to the selection.</li>
+
+                <img src="../images/admin/Dashboard_new_filter.png" alt="Dashboard Filter" width="900px">
+
+              </ul>
+            </div>
+            <!-- div for Investor Menu ---- Admin -->
+            <div id="investor">
+              <h5 id="admin-sub1"> Accounts Menu</h5>
+              <div id="investor-view">
+                The Accounts Menu has a few sub-menus. They are:
+                <h6><i class="fas fa-angle-double-right"></i> All Accounts</h6>
+                We are allowed to view all the Accounts present, to date. Visualization has been presented as below:
+                <!-- </p> -->
+                <img src="../images/admin/AllAccounts_filter.png" alt="Accounts Menu">
+                <img src="../images/admin/All_Accounts.png" alt="Accounts Menu">
+                <p>We can perform the following tasks from here:
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can apply a few filters as shown
+                    in the
+                    shot above. You can filter your results according to the filters as shown above.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> You can directly create a new
+                    Account directly from this screen. A button has been provided for this purpose.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> You can also perform different
+                    functions for
+                    individual Accounts, such as:
+                    <div style="text-indent: 1rem;">
+                      <ul>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="#portfolio"> View Portfolio</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="#transactions"> View Transactions</a>
+                        </li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="#documents"> Documents</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="#edit"> Edit</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="#bank"> Bank</a></li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i> Delete</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i><a href="#gen-pdf"> Generate PDF</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <p></p>
+                  <div id="portfolio">
+                    <strong> Investor Portfolio</strong>
+                    <img src="../images/admin/Accounts_Portfolio_1.png" alt="Accounts Menu">
+                    <img src="../images/admin/Accounts_Portfolio_2.png" alt="Accounts Menu">
+                    <img src="../images/admin/Accounts_Portfolio_3.png" alt="Accounts Menu">
+                  </div>
+                  <div id="transactions">
+                    <strong> Investor Transactions</strong>
+                    <img src="../images/admin/Accounts_Transaction_Filter.png" alt="Accounts Menu">
+                    <img src="../images/admin/Accounts_Transaction_Filter_Details.png" alt="Accounts Menu">
+                    <img src="../images/admin/Accounts_Transaction_Filter_Details_Edit.png" alt="Accounts Menu">
+                  </div>
+                  <div id="documents">
+                    <strong> Investor Documents</strong>
+                    <img src="../images/admin/Accounts_Documents.png" alt="Accounts Menu">
+                    <ul style="text-indent: 1rem;">
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> To upload the required document,
+                        we just need drop the file onto the box provided.</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Options to View, Update and
+                        Delete have been provided. </li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Various kinds of documents can
+                        be uploaded such as Bank Statements, Credit Card Statements, Driving License etc have been
+                        provided.</li>
+                    </ul>
+                  </div>
+                  <div id="edit">
+                    <strong> Edit Account</strong>
+                    <img src="../images/admin/Accounts_Edit.png" alt="Accounts Menu">
+                    <ul style="text-indent: 1rem;">
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i>Editing of the basic details is
+                        provided here.</li>
+
+                    </ul>
+                  </div>
+                  <div id="bank">
+                    <strong> Bank Account</strong>
+                    <img src="../images/admin/Accounts_Bank.png" alt="Accounts Menu">
+                    <ul>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i>Provision to view the present
+                        bank setting is provided here.</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i>We can Edit or Delete the present
+                        bank details. Edit Screen has been shown as below:</li>
+                      <img src="../images/admin/Bank_Edit.png" alt="Accounts Menu" class="medium-img">
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i>We can also navigate to Create a
+                        Bank Accounts page wherein we need to fill out the different options and then</li>
+                      <img src="../images/admin/Bank_Create.png" alt="Accounts Menu" class="medium-img">
+
+
+                    </ul>
+                  </div>
+                  <div id="gen-pdf">
+                    <strong> Generate PDF</strong>
+                    <img src="../images/admin/GeneratePDF.png" alt="Accounts Menu">
+                    <ul style="text-indent: 1rem;">
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>Editing of the basic details is
+                        provided here.</li> -->
+
+                    </ul>
+                  </div>
+                  <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can edit the details of the
+                    Investor. </li>
+                  <img src="../images/admin/Investor_Edit.png" alt="Investor Menu - Portfolio1">
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Automatic PDF Generation - PDF is
+                    automatically generated a given time on each day.
+                    Checkbox and text has been changed to Sent Password to Email added during creation or edit of
+                    Investor. </li> -->
+
+
+                  <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> To view the “Portfolio” of the
+                    Investor, which on clicking provides individual details.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Stripe integration- <a
+                      href="#CC-button-clicked-investor">
+                      Credit Card</a> mode
+                    payment - new method of payment added to the existing systems. Now credit card can be used as a
+                    method of payment. </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> ACH debit and ACH credit buttons
+                    added separately so that investor can perform payment in both ways. It settles in Investor ACH
+                    Status Check from where it needs to be approved.</li>
+                  <img src="../images/admin/AllInvestors_Portfolio_1_edited.png" alt="Investor Menu - Portfolio1">
+                  <img src="../images/admin/AllInvestors_Portfolio_2.JPG" alt="Investor Menu - Portfolio2">
+                  <img src="../images/admin/AllInvestors_Portfolio_3.JPG" alt="Investor Menu - Portfolio3">
+
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The option to “Edit” the Investor
+                    details is
+                    also provided</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> To view “Transactions”</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Documents</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Bank</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Delete </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Generate PDF</li>
+                  <img id="CC-button-clicked-investor" src="../images/admin/AllInvestors_Portfolio_1_CC-payment.png"
+                    alt="Investor Menu - CC clicked">
+                </ul> -->
+                  </p>
+              </div>
+
+              <div id="investor-create ">
+                <h6><i class="fas fa-angle-double-right"></i> Create Accounts</h6>
+                <img src="../images/admin/CreateAccounts.png" alt="Create Investor">
+
+                This option is for creating new investors. You need to enter the following details to create a new user.
+                A few of
+                them are optional, in case of which default values will be taken. The details to be entered are as
+                follows:
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Name of the Investor</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Investor Type </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Management Fee to be given as a
+                    percentage
+                  </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Account Type</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Syndication Fee to be selected from
+                    the dropdown list and is also given as a percentage</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Email Address, Password, Confirm
+                    Password</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Send Password by Email</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Email for Notifications</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Payout Frequency</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> File Type</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Phone</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Cell Phone</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Company</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> An option for Enabling/Disabling an
+                    Investor has been given. </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> On completion of entering the data,
+                    we can
+                    create the Investor Profile. </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> For ease of use, an option for
+                    Viewing All Investors has been added to this page.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> A new feature for Auto Invest
+                    Collected Amount has
+                    been added.This feature enables the Investor to fund Merchants with Insurance. </li>
+                </ul>
+              </div>
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Generate PDF For Investors</h6>
+                <img src="../images/admin/GeneratePDF.png" alt="Generate PDF for Investors">
+                During the process of business, we might need to save the Investor details. An option for this has been
+                added to
+                the portal so as to get the PDF for the same.
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can filter the records using the
+                    following
+                    criteria:</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> From Date and To Date</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Investors</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Group By</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Recurrence</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> An option to send the PDF as email
+                    has been provided here also.</li>
+                </ul>
+              </div>
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Generated PDF/CSV Manager</h6>
+                <img src="../images/admin/Generated-PDF-CSV-Manager.png" alt="Generate PDF/CSV">
+                <img src="../images/admin/Generated-PDF-CSV-Manager-Table.png" alt="Generate PDF/CSV">
+              </div>
+            </div>
+            <!--  -->
+            <!-- div for Collection Users Menu ---- Admin -->
+
+            <div>
+              <h5 id="admin-sub2"> Collection Users Menu</h5>
+              <!-- <p> The Collection Users Menu has a few sub-menus as shown in the screenshot below:</p>
+              <img src="../images/admin/CollectionUsers.JPG" alt="Collection Users Menu" class="small-img"> -->
+              <div>The different sub-menu items available are:
+                <h6><i class="fas fa-angle-double-right"></i> All Collection Users</h6>
+                We are allowed to view all the Collection Users present, to date. Visualization has been presented as
+                below:
+                <!-- </p> -->
+                <img src="../images/admin/Collection_Users_All.png" alt="All Collection Users Menu">
+                <!-- <p>We can perform the following tasks from here: -->
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This displays all the Collection
+                    Users.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> You can directly create a new
+                    Collection User directly from this screen. A button has been provided for this purpose.</li>
+                </ul>
+                </p>
+              </div>
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Create Collection Users</h6>
+                <img src="../images/admin/Collection_Users_Create.png" alt="Create Collection Users" class="medium-img">
+
+                <p> This option is for creating new Collection Users. You need to enter the following details to create
+                  a new user. A few of them are optional, in case of which default values will be taken. The details to
+                  be
+                  entered are
+                  as follows: </p>
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Name of the Collection Users</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Email Id </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>Password</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- div for Companies Menu ---- Admin -->
+            <div>
+              <h5 id="admin-sub3"> Investor Companies Menu</h5>
+              <!-- <p> The Companies Menu has a few sub-menus as shown in the screenshot below:</p>
+              <img src="../images/admin/Companies.JPG" alt="Collection Users Menu" class="small-img"> -->
+              <div>The different sub-menu items available are:
+                <h6><i class="fas fa-angle-double-right"></i> All Companies</h6>
+                We are allowed to view all the Collection Users present, to date. Visualization has been presented as
+                below:
+                <!-- </p> -->
+                <img src="../images/admin/Investor_Companies_All.png" alt="All Companies Menu">
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the
+                    existing
+                    Companies present at that particular time and their details</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email,
+                    Created On,
+                    Updated At, are displayed in this menu after querying the database, as shown in the screenshot
+                    above:</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The option to Edit and Delete has
+                    also been
+                    given here. If you want to edit, you are taken to a page similar to the Create Company page, wherein
+                    you can
+                    update the details </li>
+                </ul>
+                </p>
+              </div>
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Create Companies</h6>
+                <p> This option is to view all create new Companies by entering their details, as shown in the figure
+                  below:</p>
+                <img src="../images/admin/Companies_Create.JPG" alt="Create Companies" class="medium-img">
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and
+                    Password are to be entered in order to create a new Company</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The Brokerage Fee, in percentage,
+                    also needs to be added which will be required for further calculations </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to
+                    the Admin, that is, their data will be with the Admin</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All
+                    Companies list
+                    from this page itself to view all the companies present</li>
+                </ul>
+              </div>
+            </div>
+
+
+            <!-- div for Admin Menu ---- Admin -->
+            <div>
+              <h5 id="admin-sub4"> Admin Menu</h5>
+              <!-- <p> The Admin Menu has a few sub-menus as shown in the screenshot below:</p>
+              <img src="../images/admin/AdminMenu.JPG" alt="Admin Menu" class="small-img"> -->
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> All Admin</h6>
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the
+                    existing Admin
+                    present at that particular time and their details</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email,
+                    Created On,
+                    Updated At, are displayed in this menu after querying the database, as shown in the screenshot
+                    below:</li>
+                  <img src="../images/admin/Admin_All.png" alt="All Admin Menu">
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The option to Edit and Delete has
+                    also been
+                    given here. If you want to edit, you are taken to a page similar to the Create Admin page, wherein
+                    you can
+                    update the details </li>
+                </ul>
+                </p>
+              </div>
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Create Admin</h6>
+                <p> This option is to view all create new Admin by entering their details, as shown in the figure below:
+                </p>
+                <img src="../images/admin/AdminMenu_Create.JPG" alt="Create Admin" class="medium-img">
+                <!-- <ul>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                        </ul> -->
+              </div>
+            </div>
+            <!-- div for Editor Menu ---- Admin -->
+            <div id="admin-sub5">
+              <h5> Editor Menu</h5>
+              <!-- <p> The Editor Menu has a few sub-menus as shown in the screenshot below:</p>
+              <img src="../images/admin/EditorMenu.JPG" alt="Editor Menu" class="small-img"> -->
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> All Editor </h6>
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the
+                    existing Editor
+                    present at that particular time and their details</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email,
+                    Created On,
+                    Updated At, are displayed in this menu after querying the database, as shown in the screenshot
+                    below:</li>
+                  <img src="../images/admin/EditorMenu_All.png" alt="All Editor Menu">
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The option to Edit and Delete has
+                    also been
+                    given here. If you want to edit, you are taken to a page similar to the Create Admin page, wherein
+                    you can
+                    update the details </li>
+                </ul>
+                </p>
+              </div>
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Create Editor</h6>
+                <p> This option is to view all create new Editor by entering their details, as shown in the figure
+                  below:</p>
+                <img src="../images/admin/EditorMenu_Create.png" alt="Create Companies" class="medium-img">
+                <!-- <ul>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                        </ul> -->
+              </div>
+            </div>
+            <!--.............................  -->
+
+
+            <!-- div for Lender  Menu ---- Admin -->
+            <div id="admin-sub6">
+              <h5> Lender Menu</h5>
+              <!-- <p> The Lender Menu has a few sub-menus as shown in the screenshot below:</p>
+              <img src="../images/admin/LenderMenu.JPG" alt="Lender Menu" class="small-img"> -->
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> All Lender </h6>
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the
+                    existing Lender
+                    present at that particular time and their details</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email,
+                    Created On,
+                    Updated At, Syndication Fee, Management Fee and Lag Time are displayed in this menu after querying
+                    the
+                    database, as shown in the screenshot below:</li>
+                  <img src="../images/admin/LenderMenu_All.png" alt="All Lender Menu">
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The option to Edit and Delete has
+                    also been
+                    given here. If you want to edit, you are taken to a page similar to the Create Lender page, wherein
+                    you can
+                    update the details</li>
+                </ul>
+                </p>
+              </div>
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Create Lender</h6>
+                <p> This option is to view all create new Editor by entering their details, as shown in the figure
+                  below:</p>
+                <img src="../images/admin/LenderMenu_Create.png" alt="Create Lender">
+                <!-- <ul>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                        </ul> -->
+              </div>
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Lender Settings</h6>
+                <p> This option is to view all create new Lender by entering their details, as shown in the figure
+                  below:</p>
+                <img src="../images/admin/LenderMenu_Settings.png" alt="Lender Settings">
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is for enabling or
+                    disabling
+                    Lenders depending on the need of the hour, as shown below:</li>
+                </ul>
+              </div>
+            </div>
+            <!--.............................  -->
+
+            <!-- div for Viewer  Menu ---- Admin -->
+            <div id="admin-sub7">
+              <h5> Viewer Menu</h5>
+              <!-- <p> The Viewer Menu has a few sub-menus as shown in the screenshot below:</p>
+              <img src="../images/admin/ViewersMenu.JPG" alt="Viewer Menu" class="small-img"> -->
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> All Viewer </h6>
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the
+                    existing Lender
+                    present at that particular time and their details</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email,
+                    Created On
+                    and Updated At are displayed in this menu after querying the database, as shown in the screenshot
+                    below:</li>
+                  <img src="../images/admin/ViewersMenu_All.png" alt="All Viewer Menu">
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The option to Edit and Delete has
+                    also been
+                    given here. If you want to edit, you are taken to a page similar to the Create Lender page, wherein
+                    you can
+                    update the details.</li>
+                </ul>
+                </p>
+              </div>
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Create Viewer</h6>
+                <p> This option is to view all create new Viewer by entering their details, as shown in the figure
+                  below:</p>
+                <img src="../images/admin/ViewersMenu_Create.png" alt="Create Viewer" class="medium-img">
+                <!-- <ul>
+                                                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                                </ul> -->
+              </div>
+            </div>
+            <!--.............................  -->
+            <!-- div for Roles And Permissions  Menu ---- Admin -->
+            <div id="admin-sub8">
+              <h5> Roles And Permissions Menu</h5>
+              <!-- <p> The Roles And Permissions Menu has a few sub-menus as shown in the screenshot below:</p>
+              <img src="../images/admin/RolesMenu.JPG" alt="Roles And Permissions Menu" class="small-img"> -->
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Users And Roles </h6>
+                <!-- <p> 	This option is to view all create new Viewer by entering their details, as shown in the figure below:</p> -->
+                <img src="../images/admin/RolesMenu_UserRoleManagement_filter.png" alt="User Role Management">
+
+                <img src="../images/admin/RolesMenu_UserRoleManagement_table.png" alt="Edit Roles Viewer">
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the roles
+                    that have been assigned to each user.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> A filter has been provided so as to
+                    query and tabulate the required result.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Option to edit an existing user has
+                    been provided here by clicking on the view button.</li>
+                  <img src="../images/admin/RolesMenu_Roles_edit.png" alt="Edit Roles Viewer" class="medium-img">
+                </ul>
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Option to create a new user has been
+                    provided here.</li>
+                  <img src="../images/admin/RolesMenu_UserRoleManagement_Create.png" alt="Create Roles Viewer"
+                    class="medium-img">
+
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> You need to fill in Name, Email id,
+                    Password and these are compulsory fields. You also need to assign roles by checking the required
+                    boxes. Clicking on the Create button will create the said user.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> From here itself option to View
+                    Users
+                    and View Merchants has been provided.</li>
+                  <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All
+                    Companies list from this page itself to view all the companies present</li> -->
+                </ul>
+              </div>
+
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Roles And Permissions </h6>
+                <ul>
+                  <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	This option is to view all the existing Lender present at that particular time and their details</li> -->
+                  <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>		The details, such as Name, Email, Created On and Updated At are displayed in this menu after querying the database, as shown in the screenshot below:</li> -->
+                  <img src="../images/admin/RolesMenu_Roles_And_Permissions.png" alt="Roles And Permissions Menu">
+                  <img src="../images/admin/RolesMenu_Roles_Permissions_edited.png" alt="Permissions">
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Before we had to manually specify
+                    the roles and permissions of the different users. It has been changed so that all the permissions,
+                    at present, are displayed, depending on the role. We can edit these and add or remove the
+                    permissions.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Another option to Copy Role
+                    Permissions have been created. This allows to copy the permissions allotted to a particular role.
+                  </li>
+                </ul>
+                </p>
+              </div>
+
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> Modules</h6>
+                <!-- <p> 	This option is to view all create new Viewer by entering their details, as shown in the figure below:</p> -->
+                <img src="../images/admin/RolesMenu_Roles_Modules.JPG" alt="Modules">
+                <img src="../images/admin/RolesMenu_Roles_Modules_Create.JPG" alt="Modules" class="medium-img">
+                <!-- <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                </ul> -->
+              </div>
+
+              <div>
+                <h6><i class="fas fa-angle-double-right"></i> User Firewall</h6>
+                <!-- <p> 	This option is to view all create new Viewer by entering their details, as shown in the figure below:</p> -->
+                <!-- <img src="../images/admin/RolesMenu_Roles_Modules.JPG" alt="Modules"> -->
+                <img src="../images/admin/UserFirewall.png" alt="User Firewall">
+                <!-- <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                </ul> -->
+              </div>
+            </div>
+            <!--.............................  -->
+
+            <!-- div for Merchants Menu ---- Admin -->
+            <div id="merchant">
+              <h5> Merchants Menu</h5>
+              <!-- <p> The Merchants Menu has a few sub-menus as shown in the screenshot below:</p>
+              <img src="../images/admin/MerchantsMenu.JPG" alt="Merchants Menu" class="small-img"> -->
+
+              <div id="merchant-view">
+                <h6><i class="fas fa-angle-double-right"></i> All Merchants</h6>
+                <ul>
+                  <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	This option is to view all the existing Lender present at that particular time and their details</li> -->
+                  <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>		The details, such as Name, Email, Created On and Updated At are displayed in this menu after querying the database, as shown in the screenshot below:</li> -->
+                  <img src="../images/admin/MerchantsMenu_All_New_1_updated.png" alt="All Merchants Menu">
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> ACH Transfers included in the
+                    Advance Type as shown
+                    below:</li>
+                  <img src="../images/admin/advance-types.png" alt="Advance Types" class="small-img">
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Filter for Bank Account also added
+                    with filter values of Yes or No. Accordingly, the queried result will be tabulated.</li>
+
+                  <img src="../images/admin/MerchantsMenu_All_New_2.png" alt="All Merchants Menu Tabulation">
+
+                  <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The option to Edit and Delete has also been given here. If you want to edit, you are taken to a page similar to the Create Lender page, wherein you can update the details./li> -->
+                </ul>
+                </p>
+                <p>
+                  As shown in the figure above, there are a few buttons provided against each merchant.
+
+                  View button allows us to view a detailed view or the <strong><a href="#mer-portfolio"> Portfolio of
+                      Merchant</strong> </a>data as
+                  shown in the screenshot provided. </p>
+                <div id="mer-portfolio">
+                  <img src="../images/admin/MerchantsMenu_ViewButton_new_edited.png"
+                    alt="Details of individual Merchant ">
+                  <img src="../images/admin/MerchantsMenu_ViewButton_New_1.png" alt="Details of individual Merchant ">
+                  <img src="../images/admin/MerchantsMenu_ViewButton_New_1_total.png"
+                    alt="Details of individual Merchant ">
+                  <img src="../images/admin/MerchantsMenu_ViewButton_New_2_edited.png"
+                    alt="Details of individual Merchant ">
+                  <p>
+                    Transactions are provided according to the payment date. Details of each transaction on a particular
+                    date can be expanded and viewed as given below.
+                    <img src="../images/admin/MerchantsMenu_ViewButton_New_3_edited.png"
+                      alt="Details of individual Merchant ">
+                  </p>
+                </div>
+                <ul>
+
+
+
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> For each merchant, an array of
+                    buttons have been provided for different functions provided:</li>
+                  <img src="../images/admin/Merchant-details-top-buttons.png" alt="Details of individual Merchant ">
+                  <div style="text-indent: 1rem;">
+                    <ul>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#roll-ins"> Roll Ins Payment</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#upload-docs"> Upload Docs</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#notes"> Notes</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#"> Re-generate</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#"> Open Last Statement</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#mer-credit-card"> Credit Card</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#"> Bank</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#ach-terms"> ACH Terms</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#"> Pause ACH</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#"> Edit</li></a>
+                      <li><i class="fa fa-check" aria-hidden="true"></i><a href="#"> Add Payment</li></a>
+                    </ul>
+                  </div>
+                  <div id="roll-ins" style="text-indent: 1rem;">
+                    <strong> Roll Ins Payment </strong>
+                    <br>
+                    <img src="../images/admin/Roll-ins-payment.png" alt="Roll Ins Payment" class="small-img">
+                  </div>
+                  <div id="upload-docs" style="text-indent: 1rem;">
+                    <strong> Upload Docs </strong>
+                    <br>
+                    <img src="../images/admin/UploadDocs_merchant.png" alt="Upload Docs Payment">
+                    <ul>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> All documents that needs to be
+                        uploaded can be done by just dropping the files here. </li>
+                    </ul>
+
+                  </div>
+                  <div id="notes" style="text-indent: 1rem;">
+                    <strong> Notes </strong>
+                    <br>
+                    <ul>
+                      <img src="../images/admin/AddNotes_merchant.png" alt="Add Notes for Merchant">
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Notes can be added for the
+                        merchant</li>
+                    </ul>
+                  </div>
+                  <br>
+                  <div id="mer-credit-card" style="text-indent: 1rem;">
+                    <strong> Credit Card</strong>
+                    <ul>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Stripe integration- <a
+                          href="#CC-button-clicked">Credit Card</a> mode payment - new method of payment added to the
+                        takes to a different page where payments can be made using the Credit Card.</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Displayed amount to be paid
+                        would be
+                        including the processing fee.</li>
+                    </ul>
+                    <img id="CC-button-clicked" src="../images/admin/Merchant_CC_ButtonClicked.png"
+                      alt="Credit Card payment page">
+                  </div>
+
+                  <div id="ach-terms" style="text-indent: 1rem;">
+                    <strong> ACH Terms</strong>
+                    <ul>
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Few buttons have been provided, as
+                      given in the first
+                      figure.</li> -->
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> A new feature for ACH transfers
+                        have
+                        been provided.
+                        They are a way to move money between accounts at different banks electronically. They enable you
+                        to
+                        send or receive money conveniently and securely.</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> ACH Terms button, when clicked
+                        take
+                        to the Payment Terms page giving the Merchants details as shown in the figure:</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Pause Button has been added to
+                        pause
+                        the payment </li>
+                      <img src="../images/admin/ACH_Button_1.png" alt="Merchant ACH">
+
+                      <img src="../images/admin/ACH_Button_2.png" alt="Merchant ACH">
+                      <img src="../images/admin/ACH_Button_3_paid-section.png" alt="Merchant ACH">
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Paid transactions are marked
+                        green.
+                      </li>
+                      <img src="../images/admin/ACH_Button_4_Manual-payment.png" alt="Merchant ACH">
+
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can also use some buttons as shown below to perform
+                                                                                                                                                                                                                                                                                                                                                                                                            the respective job.</li> -->
+                      <img src="../images/admin/ACH_Button_terms.png" alt="Merchant All Buttons">
+                      <img src="../images/admin/ACH_Button_terms_update.png" alt="Merchant All Buttons"
+                        style="width: 51%;">
+                      <img src="../images/admin/MerchantsMenu_RollIns.png" alt="Merchant Roll Ins" style="width: 51%;">
+                    </ul>
+                    <ul>
+                      <li class=" inner-list-items"><i class="fas fa-chevron-right"></i> Investor Names, as seen in the
+                        tabulation, are links that takes us to a separate window wherein we can edit the Investor
+                        Details.
+                      </li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i>Edit button provided against each
+                        Investor takes to a page as given below:</li>
+
+                      <img src="../images/admin/Merchant_Investor_Edit.png" alt="Merchant Investor Edit">
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can also use some buttons as 
+                       shown below to perform the respective job.</li> 
+                  <img src="../images/admin/MerchantsMenu_All_topButtons.JPG" alt="Merchant All Buttons"> -->
+                    </ul>
+
+                    <!-- <img src="../images/admin/MerchantsMenu_vi" alt="Roles And Permissions Menu"> -->
+                  </div>
+
+                  <div id="merchant-create">
+                    <h6><i class="fas fa-angle-double-right"></i> Create Merchants</h6>
+                    <!-- <p> 	This option is to view all create new Viewer by entering their details, as shown in the figure below:</p> -->
+                    <img src="../images/admin/MerchantsMenu_Create1_new.png" alt="Create Merchants">
+                    <img src="../images/admin/MerchantsMenu_Create2_new.png" alt="Create Merchants">
+                    <ul>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The above screenshots show the
+                        entries required for creating a new Merchant.</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The fields marked with star are
+                        compulsory </li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> All notifications will be
+                        emailed to
+                        the email id specified at the time of Merchant creation</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> New fields Experian Intelliscore
+                        and
+                        Experian Financial Score has been added. An Intelliscore is a term used in business, for a
+                        numerical
+                        score granted by Experian to Business as a credit score for the promptness of their payments to
+                        creditors.</li>
+                    </ul>
+
+                  </div>
+                  <div>
+                    <h6><i class="fas fa-angle-double-right"></i> Graphs</h6>
+                    <!-- <p> 	This option is to view all create new Viewer by entering their details, as shown in the figure below:</p> -->
+                    <img src="../images/admin/MerchantsMenu_Graph1.JPG" alt="Graphs">
+                    <!-- <img src="../images/admin/RolesMenu_Roles_Modules_Create.JPG" alt="Modules">  -->
+                    <!-- <ul>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                </ul> -->
+                  </div>
+                  <div>
+                    <h6><i class="fas fa-angle-double-right"></i> Change to Default</h6>
+                    <!-- <p> 	This option is to view all create new Viewer by entering their details, as shown in the figure below:</p> -->
+                    <img src="../images/admin/MerchantsMenu_ChangeToDefault.JPG" alt="Change to Default"
+                      class="medium-img">
+                    <img src="../images/admin/MerchantsMenu_ChangeToDefault2.JPG" alt="Change to Default"
+                      style="width: 51%;">
+                    <!-- <img src="../images/admin/RolesMenu_Roles_Modules_Create.JPG" alt="Modules">  -->
+                    <ul>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> In case, a deal is not complete
+                        and
+                        it has not
+                        received payments in 4 months, then we have the option to change the status of the merchant to
+                        default.</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Here, on clicking the “Change
+                        Merchant
+                        Status”, a separate window opens and we can select the merchant whose status we would like to
+                        change. </li>
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                       <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li> -->
+                    </ul>
+                  </div>
+                  <div>
+                    <h6><i class="fas fa-angle-double-right"></i> Change to Advanced Status</h6>
+                    <!-- <p> 	This option is to view all create new Viewer by entering their details, as shown in the figure below:</p> -->
+                    <img src="../images/admin/MerchantsMenu_ChangeToAdvancedStatus1.JPG" alt="Change to Advanced Status"
+                      class="medium-img">
+                    <img src="../images/admin/MerchantsMenu_ChangeToAdvancedStatus2.JPG" alt="Change to Advanced Status"
+                      style="width: 51%;">
+                    <!-- <img src="../images/admin/RolesMenu_Roles_Modules_Create.JPG" alt="Modules">  -->
+                    <ul>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> In case, a deal is 99% complete,
+                        then we can change the status to Advance Completed.</li>
+                      <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Here, on clicking the “Change to
+                        Advanced Completed Status”, a separate window opens and we can select the merchant whose status
+                        we would like to change.</li>
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li> -->
+                    </ul>
+                  </div>
+                  <div>
+                    <h6><i class="fas fa-angle-double-right"></i>Generate Statements</h6>
+                    <ul>
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	This option is to view all the transactions made and their details.</li>
+                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The details, such as Category, Amount, Date and Account Number are displayed in this menu after querying the database, as shown in the screenshot below:</li> -->
+                      <img src="../images/admin/MerchantsMenu_GenerateStatement.JPG" alt="Generate Statement">
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	We can also apply Filters like Date, Investors, Account Number and Transaction Categories.</li>
+                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The option to Delete or Delete Batch has also been given here.</li>
+                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	You can also create a new transaction bill.</li> -->
+
+                    </ul>
+                    </p>
+                  </div>
+                  <div>
+                    <h6><i class="fas fa-angle-double-right"></i>Generated Statements</h6>
+                    <ul>
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	This option is to view all the transactions made and their details.</li>
+                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The details, such as Category, Amount, Date and Account Number are displayed in this menu after querying the database, as shown in the screenshot below:</li> -->
+                      <img src="../images/admin/MerchantsMenu_Generated_Statement.JPG" alt="Generate Statement">
+                      <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	We can also apply Filters like Date, Investors, Account Number and Transaction Categories.</li>
+                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The option to Delete or Delete Batch has also been given here.</li>
+                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	You can also create a new transaction bill.</li> -->
+
+                    </ul>
+                    </p>
+                  </div>
+              </div>
+              <div id="admin-sub9">
+                <h5>Marketing Offers</h5>
+                <p> The Marketing Offers helps us to set up offers to the market.</p>
+                <img src="../images/admin/MarketingOffers.JPG" alt="Marketing Offers">
+                <p>
+                  A Create Offer button has been provided to add in new Marketing offers.
+                  <!-- <img src="../images/admin/MarketingOffers_Create.JPG" alt="Create Offers" class="medium-img"> -->
+                  <img src="../images/admin/MerchantsMenu_MarketingOffers_edit.JPG" alt="Edit Marketing Offers"
+                    style="width: 60%;">
+                  <img src="../images/admin/MerchantsMenu_MarketingOffers_create.JPG" alt="Create Marketing Offers"
+                    class="medium-img">
+                </p>
+
+              </div>
+
+
+
+              <!--.............................  -->
+
+
+              <!-- div for Transactions Menu ---- Admin -->
+              <div id="admin-sub10">
+                <h5> Transactions Menu</h5>
+                <p> The Transactions Menu has a few sub-menus as shown in the screenshot below:</p>
+                <img src="../images/admin/TransactionMenu.JPG" alt="Transactions Menu" class="small-img">
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> All Transactions</h6>
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the
+                      transactions made and their details.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Category,
+                      Amount, Date and Account Number are displayed in this menu after querying the database, as shown
+                      in
+                      the screenshot below:</li>
+                    <img src="../images/admin/TransactionMenu_All.JPG" alt="All Transaction">
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can also apply Filters like
+                      Date,
+                      Investors, Account Number and Transaction Categories.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The option to Delete or Delete
+                      Batch
+                      has also been given here.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> You can also create a new
+                      transaction bill.</li>
+
+                  </ul>
+                  </p>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Create Bills</h6>
+                  <p> This option is to view all create Transaction Bill by entering their details, as shown in the
+                    figure
+                    below:</p>
+                  <img src="../images/admin/TransactionMenu_Create.JPG" alt="Create Bills">
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Company,
+                      Merchants, Investors, Account Number, Category, Amount and Date are to be entered in order to
+                      create
+                      a new Bill.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The option to view the overall
+                      list
+                      of all Transactions have been added here.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> One can Select all Investors or
+                      Deselect the Investors by clicking on the respective buttons.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Import Bills</h6>
+                  <!-- <p> 	This option is to view all create new Viewer by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/TransactionMenu_Import.JPG" alt=" Import Bills">
+                  <!-- <img src="../images/admin/RolesMenu_Roles_Modules_Create.JPG" alt="Modules">  -->
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to import
+                      Transaction
+                      Bills.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> An option to download the format
+                      has
+                      been provided. You need to upload in the given format.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>A CSV needs to be chosen for
+                      uploading.</li>
+                  </ul>
+                </div>
+              </div>
+              <!--.............................  -->
+
+              <!-- div for Reconciliation Request Menu ---- Admin -->
+
+              <!-- </div> -->
+              <div>
+                <h5 id="admin-sub20"> Reconciliation Request</h5>
+                <!-- <p> The Reconciliation Request has a few sub-menus as shown in the screenshot below:</p> -->
+                <img src="../images/admin/RerconciliationRequestMenu.png" alt="Reconciliation Request Menu"
+                  class="small-img">
+
+                <!-- <h6><i class="fas fa-angle-double-right"></i>View Template</h6> -->
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Reconciliation Request menu item
+                    added
+                    to get a
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> <strong>Merchant, Reconciliation,
+                      Funded
+                      Date, Days, IP address and Date</strong> are tabulated.</li>
+
+                </ul>
+                </p>
+              </div>
+
+              <!--.............................  -->
+
+              <!-- div for Reconciliation Mail Log Menu ---- Admin -->
+
+              <div>
+                <h5 id="admin-sub21"> Reconciliation Mail Log</h5>
+                <!-- <p> The Reconciliation Mail Log has a few sub-menus as shown in the screenshot below:</p> -->
+                <img src="../images/admin/ReconciliationMailLog.png" alt="Reconciliation Mail Log Menu"
+                  class="small-img">
+
+                <!-- <h6><i class="fas fa-angle-double-right"></i>View Template</h6> -->
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Reconciliation Mail Log menu item
+                    added
+                    to get a record of the Reconciliation mails sent to merchants at an interval of 30 days. Mail
+                    description also added.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> <strong>Merchant, Title Status,
+                      Failed
+                      Message, Email and Date</strong> are tabulated.</li>
+                </ul>
+                </p>
+              </div>
+
+              <!-- div for Velocity Menu ---- Admin -->
+              <div id="admin-sub11">
+                <h5> Velocity Menu</h5>
+                <p> The Velocity Distributions Menu has a sub-menu as shown in the screenshot below:
+                </p>
+                <img src="../images/admin/VelocityMenu.JPG" alt="Velocity Menu" class="small-img">
+                <p>
+                  The different sub-menu item available is:</p>
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> All Distributions</h6>
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> You can write Equity investors
+                      distributions can be viewed and edited here.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can also apply Date Filters and
+                      query the database.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Option to download also provided
+                      here, in case you would like to have a saved copy for the query. </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> An option to “Create Velocity
+                      Distribution” is also provided, wherein you can enter the details of Amount, Investment Date,
+                      Maturity Date, Investor, Transaction Category and Transaction Type.</li>
+                    <img src="../images/admin/VelocityMenu_AllDistributions.JPG" alt="All Distributions">
+                  </ul>
+                  </p>
+                </div>
+              </div>
+              <!--.............................  -->
+
+              <!-- div for Merchants Batches Menu ---- Admin -->
+              <div id="admin-sub12">
+                <h5> Merchants Batches Menu</h5>
+                <p> The Merchants Batches has a few sub-menus as shown in the screenshot below:</p>
+                <img src="../images/admin/MerchantbatchesMenu.JPG" alt="Merchants Batches Menu" class="small-img">
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> All Batches</h6>
+                  <p> This option is to view all Batches by entering their details, as shown in the figure below:</p>
+
+                  <img src="../images/admin/MerchantbatchesMenu_AllBatches.JPG" alt="All Batches">
+
+                  <!-- <ul>
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	This option is to view all the transactions made and their details.</li>
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The details, such as Category, Amount, Date and Account Number are displayed in this menu after querying the database, as shown in the screenshot below:</li>
+                          <img src="../images/admin/TransactionMenu_All.JPG" alt="All Transaction">
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	We can also apply Filters like Date, Investors, Account Number and Transaction Categories.</li>
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The option to Delete or Delete Batch has also been given here.</li>
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	You can also create a new transaction bill.</li>
+                          
+                        </ul> -->
+                  </p>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Create Batches</h6>
+                  <p> This option is to create Batches by entering their details, as shown in the figure below:</p>
+                  <img src="../images/admin/MerchantbatchesMenu_create.JPG" alt="Create Batches">
+                  <!-- <ul>
+                              <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Company, Merchants, Investors, Account Number, Category,  Amount and Date are to be entered in order to create a new Bill.</li>
+                              <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The option to view the overall list of all Transactions have been added here.</li>
+                              <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	One can Select all Investors or Deselect the Investors by clicking on the respective buttons.</li>                       
+                        </ul> -->
+                </div>
+
+              </div>
+              <!--.............................  -->
+
+              <!-- div for Payments Menu ---- Admin -->
+              <div id="admin-sub13">
+                <h5> Payments Menu</h5>
+                <p> The Payments has a few sub-menus as shown in the screenshot below:</p>
+                <img src="../images/admin/PaymentsMenu_New.png" alt="Payments Menu" class="small-img">
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i>Open Items</h6>
+                  <!-- <p> 	This option is to view all Batches by entering their details, as shown in the figure below:</p>
+
+                        <img src="../images/admin/MerchantbatchesMenu_AllBatches.JPG" alt="All Batches"> -->
+
+                  <!-- <ul>
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	This option is to view all the transactions made and their details.</li>
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The details, such as Category, Amount, Date and Account Number are displayed in this menu after querying the database, as shown in the screenshot below:</li>
+                          <img src="../images/admin/TransactionMenu_All.JPG" alt="All Transaction">
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	We can also apply Filters like Date, Investors, Account Number and Transaction Categories.</li>
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The option to Delete or Delete Batch has also been given here.</li>
+                          <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	You can also create a new transaction bill.</li>
+                          
+                        </ul> -->
+                  </p>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Generate Payment For Lenders</h6>
+                  <p> This option is to create Batches by entering their details, as shown in the figure below:</p>
+                  <img src="../images/admin/PaymentsMenu_Generate_1.JPG" alt=" Generate Payment For Lenders">
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>This option is to view all the
+                      transactions made and their details.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> TWe can also apply Filters like
+                      Lender, Payment Date and Company.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> On clicking the “View” button, the
+                      result of the query, as shown in the screenshot below:</li>
+                    <img src="../images/admin/PaymentsMenu_Generate.JPG" alt=" Generate Payment For Lenders">
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can generate payments for all
+                      or
+                      for an individual Merchant. The selection of the Merchant can be done by checking the checkbox.
+                    </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details such as “Merchant
+                      Name”,
+                      “Payment Date”, “Weekly Payment”, “Net Payment” and “Daily Payment” need to be provided.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>By clicking on the Merchant’s Name,
+                      you can get the details of that particular Merchant, along with all the payment details.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>By entering all the given details,
+                      you can generate a payment, which will be recorded in the database.</li>
+
+                  </ul>
+                </div>
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Send ACH</h6>
+
+                  <img src="../images/admin/SendACH_edited.png" alt="Send ACH">
+
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This shows a list of Merchant ACH
+                      details that is
+                      to be sent to the bank the next day. On clicking, the details are sent to the bank.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> All fields have been made
+                      editable,
+                      so
+                      now we can enter the different fees. If there is a definite fee already specified, then that would
+                      be
+                      displayed, else it will be shown as null. We can add any fee amount.</li>
+                    <img src="../images/admin/Send-ACH-Button_edited.png" alt="Send ACH">
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The status of this can be viewed
+                      in
+                      the ACH Status
+                      Check Menu.</li>
+
+
+
+                  </ul>
+                  </p>
+                </div>
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> ACH Status Check</h6>
+                  <ul>
+
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can view the ACH status of
+                      Merchants.</li>
+                    <img src="../images/admin/Payment-ACH-status-Check_updated_1.png" alt="ACH Status check">
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Various Status Type Filter have
+                      been
+                      provided,
+                      such as
+                      Processing, Settled, Returned. </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Sorting in different fields have
+                      been
+                      added for the ease of understanding.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> "Created At" Field for the date of
+                      creation of the record.</li>
+
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Link has been provided with the
+                      Merchants name,
+                      which enables to view the details of the particular Merchant. </li>
+                    <!-- <img src="../images/admin/ACH-Status-Check-total.png" alt="ACH Status check"> -->
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> At the end of the tabulation we
+                      can
+                      find the total Amount.</li>
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Created at Field for the date of
+                  creation of the record.</li> -->
+                    <img src="../images/admin/Payment-ACH-Status-Processing.png" alt="ACH Status check">
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> You can also create a new
+                      transaction
+                      bill.</li>
+
+                  </ul>
+                  </p>
+                </div>
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> ACH Fees</h6>
+                  <ul>
+
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can view the ACH Fees of
+                      Merchants.</li>
+                    <img src="../images/admin/ACHFees.png" alt="ACH Fees">
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Date, Merchant, Status and Type
+                      filters have been provided.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Status filter options are
+                      Processing,
+                      Settled and Returned</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Type filter options are ACH
+                      Rejection,
+                      NSF, Bank Change, Blocked Account, ACH Fee and Default Fee</li>
+
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The query results can be tabulated
+                      under the headings Merchant, Amount, Type, Payment Date, Status, Order ID and Created At </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> All fields, except Amount and
+                      Order
+                      ID, can be
+                      sorted. </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Displays merchants whose fees have
+                      been set. All the fees will be added to the fees section only. It will not be added to the system
+                      data. We can also download the same tabulation. </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> By clicking the Merchant's name,
+                      we
+                      can directly reach Merchant details page</li>
+
+                  </ul>
+                  </p>
+                </div>
+
+              </div>
+              <!--.............................  -->
+
+              <!-- div for Investor ACH Menu ---- Admin -->
+              <div id="admin-sub23">
+                <h5> Investor ACH</h5>
+                <p> The Payments has a few sub-menus as shown in the screenshot below:</p>
+                <img src="../images/admin/InvestorACHMenu.png" alt="Investor ACH Menu" class="small-img">
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> An ACH payment is a type of
+                    electronic
+                    bank-to-bank funds-transfer payment system. </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Payments via ACH are made through
+                    the
+                    ACH network, rather than going through the card networks.</li>
+
+                </ul>
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Status Check</h6>
+                  <p> This option is to view Investor ACH Status.</p>
+
+                  <img src="../images/admin/InvestorStatusCheck.png" alt="Investor Status Check">
+                  <img src="../images/admin/InvestorStatusCheckTable1.png" alt="Investor Status Check">
+
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to check ACH
+                      Status.
+                    </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> We can apply Filters like Date,
+                      Investors, Settlement Status, Transaction Method, Transaction Type and Request Status.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Date,
+                      Investor,
+                      Order Id, Transaction Type, Transaction Method, Amount, Request Status, Settlement Status, Auth
+                      Code,
+                      Status Response and Action are displayed in this table after querying the database, as shown in
+                      the
+                      screenshot below:</li>
+
+                    <!-- <img src="../images/admin/TransactionMenu_All.JPG" alt="All Transaction"> 
+                <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The option to Delete or Delete Batch
+                  has also been given here.</li>
+                <li class="inner-list-items"><i class="fas fa-chevron-right"></i> You can also create a new transaction
+                  bill.</li> -->
+
+                  </ul>
+                  </p>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Syndication Payments</h6>
+                  <!-- <p> This option is to create Batches by entering their details, as shown in the figure below:</p> -->
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>This option is to view all the
+                      transactions made and their details.</li>
+                    <img src="../images/admin/InvestorSyndicationPayments_1.png" alt=" Investor Syndication Payments"
+                      class="medium-img">
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Investor From To Total Payments
+                      PTD
+                      Management Fee Net Amount Syndicate Payment(PTS) Liquidity Action</li>
+                    <img src="../images/admin/InvestorSyndicationPayments_2.png" alt=" Investor Syndication Payments">
+                    <img src="../images/admin/InvestorSyndicationPayments_3.png" alt=" Investor Syndication Payments">
+                    <img src="../images/admin/InvestorSyndicationPayments_4.png" alt=" Investor Syndication Payments">
+
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>This option is to view all the
+                      transactions made and their details.</li>
+
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> TWe can also apply Filters like
+                      Lender, Payment Date and Company.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> On clicking the “View” button, the
+                      result of the query, as shown in the screenshot below:</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>By entering all the given details,
+                      you can generate a payment, which will be recorded in the database.</li>
+
+                  </ul>
+                </div>
+
+
+
+              </div>
+              <!--.............................  -->
+
+              <!-- div for Marketplace Menu ---- Admin -->
+              <div id="admin-sub14">
+                <h5> Marketplace Menu</h5>
+                <img src="../images/admin/Marketplace.JPG" alt="Marketplace Menu">
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Here only the Merchants who have
+                    been
+                    selected for Marketplace can be viewed.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Merchant's data is displayed here
+                    and
+                    Investors can invest money in it by clicking onto the “Fund” button.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Admin can approve this deal and the
+                    Merchant will be funded by the Gross Amount.</li>
+                </ul>
+              </div>
+              <!--.............................  -->
+
+
+
+              <!-- ------------------------------------ -->
+
+              <!-- div for Log Menu ---- Admin -->
+              <div>
+                <h5 id="admin-sub15"> Logs Menu</h5>
+                <p> The Logs Menu has a few sub-menus as shown in the screenshot below:</p>
+                <img src="../images/admin/LogsMenu_1.png" alt="Logs Menu" class="small-img">
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Liquidity Log</h6>
+                  <ul>
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the existing Admin 
+                              present at that particular time and their details</li>-->
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email, Created On, 
+                              Updated At, are displayed in this menu after querying the database, as shown in the screenshot below:</li>-->
+                    <img src="../images/admin/LogsMenu_liquidity_new.png" alt="Liquidity Log">
+                    <img src="../images/admin/LogsMenu_liquidity_1_new.png" alt="Liquidity Log">
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>Description Field and Description
+                      Filter added in Liquidity Log</li>
+                  </ul>
+                  </p>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Merchants Liquidity Log</h6>
+                  <!-- <p> This option is to view all create new Admin by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/LogsMenu_MerchantLiquidityLog.JPG" alt="Merchants Liquidity Log">
+                  <img src="../images/admin/LogsMenu_MerchantLiquidityLog_1.JPG" alt="Merchants Liquidity Log">
+                  <!-- <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+              </ul> -->
+                </div>
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Merchants Status Log</h6>
+                  <!-- <p> This option is to view all create new Admin by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/LogsMenu_MerchantStatusLog.JPG" alt="Merchants Liquidity Log">
+                  <!-- <img src="../images/admin/LogsMenu_MerchantLiquidityLog_1.JPG" alt="Merchants Liquidity Log"> -->
+                  <!-- <ul>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                        </ul> -->
+                </div>
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Activity Log</h6>
+                  <!-- <p> This option is to view all create new Admin by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/LogsMenu_ActivityLog.JPG" alt="Merchants Liquidity Log">
+                  <!-- <img src="../images/admin/LogsMenu_MerchantLiquidityLog_1.JPG" alt="Merchants Liquidity Log"> -->
+                  <!-- <ul>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                        </ul> -->
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Investor Transaction Log</h6>
+                  <!-- <p> This option is to view all create new Admin by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/Investor_Transaction_Log.png" alt="Investor_Transaction_Log">
+                  <!-- <img src="../images/admin/LogsMenu_MerchantLiquidityLog_1.JPG" alt="Merchants Liquidity Log"> -->
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>All the details of the transaction
+                      of
+                      an Investor is captured here.</li>
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The Brokerage Fee, in percentage, also
+                  needs to be added which will be required for further calculations </li>
+                <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the
+                  Admin, that is, their data will be with the Admin</li>
+                <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All
+                  Companies list from this page itself to view all the companies present</li> -->
+                  </ul>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Message Log</h6>
+                  <!-- <p> This option is to view all create new Admin by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/MessageLog.png" alt="Message_Log">
+                  <!-- <img src="../images/admin/LogsMenu_MerchantLiquidityLog_1.JPG" alt="Merchants Liquidity Log"> -->
+                  <ul>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i>Whenever a payment fails and a
+                      RCode
+                      is
+                      returned, a ,message is to be sent. The body of the message will contain that the payment has
+                      failed
+                      with the said RCode. An option to make the payment is available and a link is sent through which
+                      it
+                      can be done. .</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Merchant Name, Date, Mobile,
+                      Remarks,
+                      Status and Action are tabulated here. </li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Date filters and Status filters
+                      have
+                      been provided. For Status filter. options provided are 'All', 'Pending' and 'Completed'.</li>
+                    <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Provision has been provided to
+                      expand
+                      and view the details of the message to be sent.</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <!-- div for Bank Details Menu ---- Admin -->
+              <div>
+                <h5 id="admin-sub16"> Bank Details Menu</h5>
+                <p> The Bank Details Menu has a few sub-menus as shown in the screenshot below:</p>
+                <img src="../images/admin/BankDetails.JPG" alt="Bank Details Menu" class="small-img">
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i>Create Accounts</h6>
+                  <ul>
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the existing Admin 
+                              present at that particular time and their details</li>-->
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email, Created On, 
+                              Updated At, are displayed in this menu after querying the database, as shown in the screenshot below:</li>-->
+                    <img src="../images/admin/BankDetails_Create.JPG" alt="Create Account" class="medium-img">
+                    <!-- <img src="../images/admin/LogsMenu_liquidity_1.JPG" alt="Liquidity Log"> -->
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The option to Edit and Delete has also been
+                              given here. If you want to edit, you are taken to a page similar to the Create Admin page, wherein you can
+                              update the details </li> -->
+                  </ul>
+                  </p>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> View Accounts</h6>
+                  <!-- <p> This option is to view all create new Admin by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/BankDetails_View.JPG" alt="View Accounts">
+                  <!-- <img src="../images/admin/LogsMenu_MerchantLiquidityLog_1.JPG" alt="Merchants Liquidity Log"> -->
+                  <!-- <ul>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                        </ul> -->
+                </div>
+
+              </div>
+
+              <!-- div for Reconcile Menu ---- Admin -->
+              <div>
+                <h5 id="admin-sub17"> Reconcile Menu</h5>
+                <p> The Reconcile Menu has a few sub-menus as shown in the screenshot below:</p>
+                <img src="../images/admin/ReconcileMenu.JPG" alt="Reconcile Menu" class="small-img">
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i>Create</h6>
+                  <ul>
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the existing Admin 
+                              present at that particular time and their details</li>-->
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email, Created On, 
+                              Updated At, are displayed in this menu after querying the database, as shown in the screenshot below:</li>-->
+                    <img src="../images/admin/ReconcileMenu_Create.JPG" alt="Create " class="medium-img">
+                    <!-- <img src="../images/admin/LogsMenu_liquidity_1.JPG" alt="Liquidity Log"> -->
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The option to Edit and Delete has also been
+                              given here. If you want to edit, you are taken to a page similar to the Create Admin page, wherein you can
+                              update the details </li> -->
+                  </ul>
+                  </p>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> List</h6>
+                  <!-- <p> This option is to view all create new Admin by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/ReconcileMenu_View.JPG" alt="List">
+                  <!-- <img src="../images/admin/LogsMenu_MerchantLiquidityLog_1.JPG" alt="Merchants Liquidity Log"> -->
+                  <!-- <ul>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                            <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                        </ul> -->
+                </div>
+
+              </div>
+              <!-- div for Wires/ACH Menu ---- Admin -->
+              <div>
+                <h5 id="admin-sub18"> Wires/ACH Menu</h5>
+                <p> The Wires/ACH Menu has a few sub-menus as shown in the screenshot below:</p>
+                <img src="../images/admin/WiresACH.JPG" alt="Wires/ACH Menu" class="small-img">
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i>List</h6>
+                  <ul>
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the existing Admin 
+                                                    present at that particular time and their details</li>-->
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email, Created On, 
+                                                    Updated At, are displayed in this menu after querying the database, as shown in the screenshot below:</li>-->
+                    <img src="../images/admin/WiresACH_List.JPG" alt="List ">
+                    <!-- <img src="../images/admin/LogsMenu_liquidity_1.JPG" alt="Liquidity Log"> -->
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The option to Edit and Delete has also been
+                                                    given here. If you want to edit, you are taken to a page similar to the Create Admin page, wherein you can
+                                                    update the details </li> -->
+                  </ul>
+                  </p>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Create</h6>
+                  <!-- <p> This option is to view all create new Admin by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/WiresACH_Create.JPG" alt="Create">
+                  <!-- <img src="../images/admin/LogsMenu_MerchantLiquidityLog_1.JPG" alt="Merchants Liquidity Log"> -->
+                  <!-- <ul>
+                                                                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                                                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                                                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                                                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                                              </ul> -->
+                </div>
+
+              </div>
+
+              <!-- div for Templates Menu ---- Admin -->
+              <div>
+                <h5 id="admin-sub19"> Templates Management Menu</h5>
+                <p> The Templates Menu has a few sub-menus as shown in the screenshot below:</p>
+                <img src="../images/admin/TemplateMenu.JPG" alt="Templates Menu" class="small-img">
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i>View Template</h6>
+                  <ul>
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> This option is to view all the existing Admin 
+                                                    present at that particular time and their details</li>-->
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i> The details, such as Name, Email, Created On, 
+                                                    Updated At, are displayed in this menu after querying the database, as shown in the screenshot below:</li>-->
+                    <img src="../images/admin/Templates.JPG" alt="View Template ">
+                    <!-- <img src="../images/admin/LogsMenu_liquidity_1.JPG" alt="Liquidity Log"> -->
+                    <!-- <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The option to Edit and Delete has also been
+                                                    given here. If you want to edit, you are taken to a page similar to the Create Admin page, wherein you can
+                                                    update the details </li> -->
+                  </ul>
+                  </p>
+                </div>
+
+                <div>
+                  <h6><i class="fas fa-angle-double-right"></i> Create Template</h6>
+                  <!-- <p> This option is to view all create new Admin by entering their details, as shown in the figure below:</p> -->
+                  <img src="../images/admin/TemplateMenu_Create.JPG" alt="Create" class="medium-img">
+                  <!-- <img src="../images/admin/LogsMenu_MerchantLiquidityLog_1.JPG" alt="Merchants Liquidity Log"> -->
+                  <!-- <ul>
+                                                                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>The details, such as Name, Email and Password are to be entered in order to create a new Company</li>
+                                                                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>	The Brokerage Fee, in percentage, also needs to be added which will be required for further calculations </li>
+                                                                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>An added feature is of Attaching to the Admin, that is, their data will be with the Admin</li>
+                                                                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i>You can also traverse to the All Companies list from this page itself to view all the companies present</li>
+                                                              </ul> -->
+                </div>
+
+              </div>
+              <div>
+                <h5 id="admin-sub20"> Reconciliation Request</h5>
+                <!-- <p> The Reconciliation Request has a few sub-menus as shown in the screenshot below:</p> -->
+                <img src="../images/admin/RerconciliationRequestMenu.png" alt="Reconciliation Request Menu"
+                  class="small-img">
+
+                <!-- <h6><i class="fas fa-angle-double-right"></i>View Template</h6> -->
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Reconciliation Request menu item
+                    added
+                    to
+                    get a
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> <strong>Merchant, Reconciliation,
+                      Funded
+                      Date,
+                      Days, IP address and Date</strong> are tabulated.</li>
+
+                </ul>
+                </p>
+              </div>
+              <div>
+                <h5 id="admin-sub20"> Reconciliation Mail Log</h5>
+                <!-- <p> The Reconciliation Mail Log has a few sub-menus as shown in the screenshot below:</p> -->
+                <img src="../images/admin/ReconciliationMailLog.png" alt="Reconciliation Mail Log Menu"
+                  class="small-img">
+
+                <!-- <h6><i class="fas fa-angle-double-right"></i>View Template</h6> -->
+                <ul>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> Reconciliation Mail Log menu item
+                    added
+                    to
+                    get a
+                    record of the Reconciliation mails sent to merchants at an interval of 30 days. Mail description
+                    also
+                    added.</li>
+                  <li class="inner-list-items"><i class="fas fa-chevron-right"></i> <strong>Merchant, Title Status,
+                      Failed
+                      Message,
+                      Email and Date</strong> are tabulated.</li>
+                </ul>
+                </p>
+              </div>
+
+              <div class="row footer">
+                <p> <strong> Copyright &copy; Investor Portal</strong> All rights reserved. </p>
+              </div>
+            </div>
+            <!-- ***************************************************** -->
+          </div>
+        </div>
+      </div>
+
+      <script src="../js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+#notification-view{
+    @include sm{
+        padding: 0 10px;
+    }
+}
+.info-header{
+    margin: 0 0 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 103%;
+        left:0;
+        width: 30px;
+        height: 2px;
+        background: #e6e6e6;
+    }
+}
+.info-content{
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    &::first-letter{
+        text-transform: uppercase;
+    }
+}
+.date_sec{
+    font-size: 13px;
+    background: #eaeaea;
+    padding: 0 10px;
+    box-shadow: 0 0 3px #ccc;
+    margin: 0;
+    line-height: 24px;
+    border-radius: 4px;
+}
+// badge
+span.notification_count{    height: 15px;
+    width: 15px;
+    background:$orange;
+    color: white;
+    font-size: 10px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 50%;
+    line-height: 15px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}

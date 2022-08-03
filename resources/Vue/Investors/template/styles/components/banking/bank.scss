@@ -1,0 +1,330 @@
+@mixin rd($radius : 10px) {
+    border-radius: $radius;
+}
+
+@function shadow($clr) {
+    @return 0 10px 20px rgba($color : $clr, $alpha: 0.35);
+}
+
+.bank-wrapper {
+    box-shadow: 0 0 15px rgba($color: #020744, $alpha: 0.05);
+    background: #FBFBFB;
+    height: 100%;
+    position: relative;
+    @include rd;
+}
+
+.bank-wrapper {
+    &.active-debit-credit,
+    &.active-debit,
+    &.active-credit,
+    &.active
+    {   
+        .bank-info {
+            background: #263DD9;
+            color: #fff;
+            .bgsec{
+                fill:#3147DE
+            }
+            .bank{
+                fill: #3147de;
+            }
+            ::v-deep .icon{
+                fill:#fff
+            }
+            .delete{
+                fill:#2338CB
+            }
+            .edit-bt{
+                fill: #2338cb;
+            }
+            .bank-title {
+                color: #fff;
+            }
+
+            .detail-group {
+                h3.label {
+                    color: #AAB3EE;
+                }
+
+                h4.value {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+// .bank-wrapper{
+//     &.active-debit-credit{
+//         .bank-info {
+//             background: #ffab78;
+//             color: #fff;
+//             .bgsec{
+//                 fill: #fbb687;
+//             }
+//             .bank-title {
+//                 color: #fff;
+//             }
+//             .bank{
+//                 fill: #fbb687;
+//             }
+//             .delete,.edit-bt{
+//                 fill:#ffab78
+//             }
+//             ::v-deep .icon{
+//                 fill:#fff
+//             }
+//             .detail-group {
+//                 h3.label {
+//                     color: #ffeadc;
+//                 }
+    
+//                 h4.value {
+//                     color: #fff;
+//                 }
+//             }
+//         }
+//     }
+//     &.active-debit{
+//         .bank-info {
+//             background: #4EBE67;
+//             color: #fff;
+//             .bgsec{
+//                 fill: #58c569;
+//             }
+//             .bank-title {
+//                 color: #fff;
+//             }
+//             .bank{
+//                 fill: #58c569;
+//             }
+//             .delete,.edit-bt{
+//                 fill:#4EBE67
+//             }
+//             ::v-deep .icon{
+//                 fill:#fff
+//             }
+//             .detail-group {
+//                 h3.label {
+//                     color: #d1f7d7;
+//                 }
+    
+//                 h4.value {
+//                     color: #fff;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.bank-info {
+    padding: 21px;
+    background: transparent;
+    position: relative;
+    background: white;
+    .row {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        justify-content: space-between;
+
+        &.head {
+            align-items: center;
+            z-index: 2;
+        }
+
+        &.body {
+            margin: -10px 0 0 0;
+        }
+
+        .col {
+            &.main {
+                padding: 0 10px;
+                flex-grow: 1;
+                position: relative;
+                padding: 0 45px 0 0;
+                .crud-actions{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    margin: -5px;
+                    .edit-bt{
+                        margin: 5px;
+                    }
+                }
+            }
+
+            &.aside {
+                min-width: 50px;
+            }
+        }
+    }
+
+    .bank-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #5E5E6B;
+    }
+
+    .detail-group {
+        margin-bottom: 10px;
+        line-height: 20px;
+
+        h3 {
+            color: #B6B6C8;
+            font-size: 14px;
+            font-weight: normal;
+            margin-bottom: 2px;
+        }
+
+        h4.value {
+            font-size: 16px;
+            color: #5E5E6B;
+            font-weight: normal;
+
+            &.bank-type {
+                .credit {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .bg-dec {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .edit-bt{
+        cursor: pointer;
+    }
+
+    @include rd;
+}
+
+.actions {
+    padding: 25px 20px;
+
+    .set-default {
+        font-size: 16px;
+        color: #7A7A7A;
+        display: flex;
+        margin: -10px;
+
+        .action{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            width: 50%;
+            
+                    &.active {
+                        color: #6D7CDF;
+            
+                        .check-box {
+                            $cl: #3246D3;
+                            border-color: $cl;
+                            background: $cl;
+                            color: #fff;
+                        }
+                    }
+        }
+
+        .check-box,
+        .label {
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .check-box {
+            height: 25px;
+            width: 25px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid #E4E8EF;
+            color: #EEEFF6;
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+    }
+
+    .credit-debit {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px -8px 0;
+        .bt-spacer{
+            padding: 0 8px;
+            width: 50%;
+            flex-grow: 1;
+        }
+        .blue-bt.action {
+            font-size: 15px;
+            width: 100%;
+            $cl: #3246D3;
+            background: $cl;
+            box-shadow: shadow($cl);
+
+            &.debit {
+                $cl: #FF6977;
+                background: $cl;
+                box-shadow: shadow($cl);
+            }
+        }
+
+        ;
+    }
+}
+// empty
+.add-bank-seg{
+    background: #F2F6FB;
+    padding: 24px;
+    height: 100%;
+    @include rd;
+    .add-action{
+        background: white;
+        height: 100%;
+        @include rd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 22px;
+        font-weight: bold;
+        color: #B4B8CF;
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out;
+        &:hover{
+            background: #f5fff6;
+        }
+        .add-icon{
+            margin-bottom: 5px;
+        }
+        .add-label{
+            margin: 0;
+            font-size: inherit;
+            font-weight: inherit;
+            user-select: none;
+        }
+    }
+}
+
+::v-deep .loader.preloader-container {
+    margin-bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    min-height: 0;
+    max-height: 100%;
+    background: #ffffffde;
+    border-radius: inherit;
+}

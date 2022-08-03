@@ -1,0 +1,41 @@
+// colors
+$prevLink:#d88681;
+$activeLink:#858c9a;
+
+.breadcrumbs{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-transform: capitalize;
+    }
+    li{
+        float: left;
+        margin-right: 10px;
+        &::after{
+            content: '>';
+            padding: 0 0 0 10px;
+            color: $activeLink;
+            display: block;
+            float: right;
+            transform: translateY(1px);
+        }
+        &:last-of-type::after{
+            content: none;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $prevLink;
+        font-size: 12px;
+        &:hover{
+            cursor: pointer;
+        }
+        &.router-link-exact-active{
+            color: $activeLink;
+            &:hover{
+                cursor: not-allowed;
+            }
+        }
+    }
+}

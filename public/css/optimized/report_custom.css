@@ -1,0 +1,17 @@
+ td.details-control{background:url(/img/icons/details_open.png) no-repeat center center;cursor:pointer;}
+      tr.shown td.details-control{background:url(/img/icons/details_close.png) no-repeat center center;}
+
+      span:hover {
+        position: relative;
+      }
+
+      span[aria-label]:hover:after {
+        content: attr(aria-label);
+        padding: 4px 8px;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        white-space: nowrap;
+        z-index: 20px;
+        background:red;
+      }

@@ -1,0 +1,27 @@
+#session-expired-warning{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    overflow: auto;
+    z-index: 5;
+    background: rgba(0,0,0,0.5);
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    text-transform: capitalize;
+    user-select: none;
+    background: white;
+}
+.msg-box{
+    background: white;
+    padding: 50px;
+    h1{
+        font-size: 25px;
+        color: $dark;
+    }
+    h3{
+        color: #888;
+    }
+}

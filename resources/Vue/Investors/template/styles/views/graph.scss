@@ -1,0 +1,134 @@
+@import '~/mixins.scss';
+.controls{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    @include sm {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    button{
+        width: 190px;
+        height: 53px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        @include md{
+            width: 150px;
+            font-size: 18px;
+        }
+        @include sm{
+            width: 100%;
+        }
+        &:disabled{
+            opacity: 0.8;
+            cursor: not-allowed;
+        }
+        &.r{
+            background-color: #F35362;
+            box-shadow: 0 10px 20px rgba(#DE3166,.26);
+        }
+        &.b{
+            background-color: #3246D3;
+            box-shadow: 0 10px 20px rgba(#00178D,.35);
+        }
+        &.g{
+            background-color: #14C765;
+            box-shadow: 0 10px 20px rgba(#14C765,.26);
+        }
+        &+button{
+            margin-left: 30px;
+            @include sm{
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+hr.hr{
+    margin: 40px 0;
+    border-top:1px solid  #E7EDF3;
+    border-bottom: 1px solid transparent;
+}
+.filter-wrapper{
+    .fields{
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        margin: 0 -30px;
+        @include lg{
+            margin: 0;
+        }
+        .quarter{
+            width: calc(100%/3 - 60px);
+            margin: 0 30px;
+            margin-bottom: 30px;
+            @include lg{
+                width: 100%;
+                margin: 0 0 30px 0;
+            }
+            label{
+                font-size: 16px;
+                font-weight: bold;
+                color: #48486E;
+                margin-bottom: 20px;
+                display: block;
+                @include sm {
+                    font-size: 14px;
+                }
+                &.error{
+                    font-weight: normal;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    color: #ed5261;
+                }
+            }
+        }
+    }
+}
+::v-deep .date-picker-wrapper{
+    margin-top: 0;
+}
+::v-deep .v-select{
+    .vs__dropdown-toggle{
+        border: none;
+        background: white;
+        box-shadow: 0 5px 20px rgba(1, 5, 129, 0.05);
+        padding: 12px 10px 12px;
+        border-radius: 10px;
+        color: #9c9fb4;
+        .vs__selected-options{
+            color: inherit;
+            span.vs__selected{
+                color: inherit;
+            }
+            input.vs__search{
+                color: inherit;
+            }
+        }
+    }
+    .vs__dropdown-menu{
+        border: none;
+        .vs__dropdown-option{
+            line-height: 40px;
+            &.vs__dropdown-option--highlight{
+                background: #3246d3;
+            }
+        }
+    }
+}
+ label{
+     pre{
+        color: #ed5261;
+        display: inline;
+        font-size: inherit;
+     }
+ }

@@ -1,0 +1,11 @@
+a.logo.main-merchant { background: #000 !important; height: 64px !important }
+.content-wrapper { background-color: #ffffff;}
+.content-header.title-investor {
+    margin-top: 65px !important;
+    /* padding: 12px 25px; */
+    /* background-color: #f1f1f1; */
+    /* box-shadow: -1px 1px 10px -2px; */
+    /* border-radius: 4px; */
+    display: inline-block;
+    padding: 0;
+}

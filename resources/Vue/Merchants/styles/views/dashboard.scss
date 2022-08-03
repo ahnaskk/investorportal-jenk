@@ -1,0 +1,220 @@
+@import '~/mixins.scss';
+
+.dashboard-row {
+    display: flex;
+    margin: 0 -24px;
+    .iframe-wrapper{
+        position: fixed;
+        display: flex;
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        iframe{
+            width: 100%;
+            height: 100vh;
+        }
+        .close{
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            cursor: pointer;
+        }
+    }
+    @include xl{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .col {
+        padding: 0 24px;
+        @include xl{
+            padding: 0;
+        }
+        &.overview {
+            width: 70%;
+            @include xxxl{
+                width: 65%;
+            }
+            @include xl{
+                width: 100%;
+            }
+        }
+
+        &.payments {
+            width: 30%;
+            @include xxxl{
+                width: 35%;
+            }
+            @include xl{
+                width: 100%;
+            }
+        }
+        &.full{
+            width: 100%;
+            background-color: transparent;
+        }
+    }
+}
+.strech-row{
+    display: flex;
+    width: 100%;
+}
+// left col
+.page-title-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include lg{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .title {
+        font-size: 24px;
+        color: #48486E;
+        font-weight: bold;
+        margin: 0;
+        @include sm{
+            font-size: 22px;
+        }
+        .info {
+            font-weight: normal;
+            font-size: 17px;
+            color: #B2B2C6;
+            margin-left: 17px;
+            @include sm{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.info-row {
+
+    display: flex;
+    margin: 23px -22px 48px;
+    @include hidpi2{
+        flex-direction: column;
+    }
+    @include sm{
+        margin: 23px 0 48px;
+    }
+    .col {
+        padding: 0 22px;
+        @include sm{
+            padding: 0;
+        }
+        &.left {
+            width: 65%;
+            @include hidpi2{
+                width: 100%;
+            }
+        }
+
+        &.right {
+            width: 35%;
+            @include hidpi2{
+                width: 100%;
+                margin-top: 48px;
+            }
+        }
+        &.full{
+            min-height: 0;
+        }
+    }
+    &.graph{
+        .content-box{
+            margin-top: 0;
+        }
+        .col{
+            &.right{
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.graph-row {
+    margin: 23px -22px 48px;
+    display: flex;
+    @include xxxl{
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+    .col{
+        width: 50%;
+        @include xxxl{
+            width: 100%;
+            padding: 0;
+            +.col{
+                margin-top: 48px;
+            }
+        }
+    }
+}
+
+
+.view-all-bt {
+    $bth: 41px;
+    border: none;
+    outline: none;
+    background: #E7EFF6;
+    color: #9599B5;
+    width: 117px;
+    height: $bth;
+    padding: 0;
+    text-align: center;
+    line-height: $bth;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+
+    @include xs {
+        width: 95px;
+        height: 34px;
+        line-height: 33px;
+        font-size: 12px;
+    }
+}
+
+.controls{
+    @include lg{
+        margin-top: 20px;
+    }
+    @include sm{
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+    .btn.blue{
+        border: 1px solid #D4D0E3;
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #63739A;
+        font-weight: bold;
+        @include sm{
+            font-size: 12px;
+        }
+        &+.btn.blue{
+            margin-left: 10px;
+        }
+        &:hover{
+            background-color: #3246D3;
+            color: #fff;
+            border-color: #3246D3;
+        }
+        &:disabled{
+            cursor:not-allowed;
+            &:hover{
+                background-color:#fff;
+                color: #63739A;
+                border-color:#D4D0E3;
+            }
+        }
+    }
+}

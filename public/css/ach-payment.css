@@ -1,0 +1,33 @@
+* .hide {
+    display:none!important;
+}
+
+.add-remove-wrapper{
+    display:flex;
+    align-items:center;
+}
+.select-inner-wrapper {
+    margin-right:20px;
+}
+.outer-wrapper{
+    display:flex;
+    align-items:center;
+}
+.outer-wrapper input{
+    margin-left:5px;
+}
+.add-remove-action.btn.btn-primary{
+    margin-bottom:0!important;
+}
+.ach-fee{
+    order: 1;
+}
+.select2.select2-container.select2-container--default.select2-container--below{
+    min-width: 100px;
+}
+input.payments ~ label.error{
+    display: block!important;
+    position: relative!important;
+    left: 0!important;
+    margin-top: 5px;
+}

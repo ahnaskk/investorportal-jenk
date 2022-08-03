@@ -1,0 +1,112 @@
+.form-outer{
+    margin: 0 -20px;
+    .form-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        &+.form-wrapper{
+            margin-top: 30px;
+        }
+    }
+}
+
+.form-inner{
+    width: calc(100% /3 - 40px);
+    margin: 0 20px;
+}
+
+.form-wrapper{
+    justify-content: flex-start;
+    align-items: flex-start;
+    &.end{
+        justify-content: flex-end;
+    }
+    &.between{
+        justify-content: space-between;
+    }
+    &.dark{
+        padding: 40px;
+        margin: 0 20px;
+        background: #F9FBFF;
+        border-radius: 10px;
+        border: 1px solid #ECF2FB;
+    }
+    ::v-deep .form-field{
+        span.error{
+            color: #ff8989;
+            margin-top: 5px;
+        }
+        .checkbox,.checkbox-wrapper{
+            height: 45px;
+            border:1px solid #BEC3DC;
+            padding: 0 15px;
+            border-radius: 10px;
+            width: 100%;
+            align-items: center;
+            display: flex;
+            label{
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+    ::v-deep input[type="text"],::v-deep input[type="number"],::v-deep input[type="password"],::v-deep select,::v-deep .radio-wrapper{
+        height: 45px;
+        border:1px solid #BEC3DC;
+        padding: 0 15px;
+        border-radius: 10px;
+        transition: border ease-in-out 0.5s;
+        width: 100%;
+        &.error{
+            border: 1px solid #ff8989;
+        }
+    }
+    ::v-deep .form-field{
+        .radio-wrapper{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            .radio-wrapper-inner{
+                +.radio-wrapper-inner{
+                    margin-left: 10px;
+                }
+            }
+            &.dark{
+                background-color: #F5F6FB;
+            }
+        }
+        .checkbox,.checkbox-wrapper{
+            &.dark{
+                background-color: #F5F6FB;
+            }
+        }
+        &.dark{
+            background-color: #F5F6FB;
+        }
+        label{
+            margin: 0 0 20px 0;
+        }
+        input{
+            margin: 0;
+        }
+    }
+    .form-field{
+        display: flex;
+        flex-direction: column;
+        ::v-deep label{
+            color: #202969;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px;
+    button{
+        height: 47px;
+        &+button{
+            margin-left: 20px;
+        }
+    }
+}

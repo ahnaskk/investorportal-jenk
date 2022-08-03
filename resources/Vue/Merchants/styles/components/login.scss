@@ -1,0 +1,113 @@
+.design_sec{
+    min-height: 100vh;
+    height: 100%;
+    width: 50%;
+    float: right;
+    background: #d43724 url(../assets/back.svg);
+    background-size: initial;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: 65%;
+    // float: right;
+    // width: 50%;
+    // background: linear-gradient(to bottom, #423c3f 0%,#423c3f 50%,#f7f5ea 50%,#f7f5ea 100%);
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // box-sizing: border-box;
+    // @include lg{
+    // }
+}
+.form_sec{
+    // float: left;
+    // width: 50%;
+    // min-height: 100vh;
+    height: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+    @include flex-center;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    float: right;;
+    @include md{
+        width: 90%;
+    }
+    // box-shadow: 0 0 20px -10px #423c3f;
+    // @include lg{
+        // @include absolute-center;
+        // min-height: 70vh;
+        // box-shadow: 0 0 20px 0 #ccc;
+    // }
+}
+.form_container{
+    @include flex-center;
+    flex-direction: column;
+    position: relative;
+}
+.login_form_title{
+    
+    font-size: 20px;
+    margin: 0 0 0 0;
+    color: #9596a0;
+    align-self: flex-start;
+
+    // text-shadow: -3px 2px 1px #ccc;
+}
+#login-page{
+    input.password,input.email{
+        height: 30px;
+        width: 300px;
+        max-width: 100%;
+        margin: 20px 0 0 0;
+        border:  1px solid #eaeaea;
+        border-radius: 5px;
+        // box-shadow: 0 0 24px -5px #ccc;
+        padding: 5px 0 5px 20px;
+        @include sm{
+            max-width: 65%;
+        }
+        &::placeholder{
+            color: #888;
+            font-style: italic;
+        }
+        // &.email{
+            
+        // }
+        &.password{
+            margin-bottom: 20px;
+        }
+    }
+}
+.checkbox-group{
+    font-size: 14px;
+    color: $dark;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+    input,
+    label{
+        cursor: pointer;
+    }
+}
+.bt_login{
+    padding: 13px 0;
+    width: 300px;
+    background: #d43724;
+    color: white;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+img.logo-lg{
+    margin-bottom: 10px;
+    display: block;
+    position: absolute;
+    bottom: calc(100% + 0px);
+    align-self: flex-start;
+    width: 100%;
+}

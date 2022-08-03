@@ -1,0 +1,42 @@
+@import '~/mixins.scss';
+.prompt-box{
+    width: 350px;
+    background: white;
+    box-shadow: 0 0 60px #EAEBF2;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.message{
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    color: #39394f;
+}
+.row{
+    display: flex;
+    padding: 20px 25px;
+    &.content{
+        background: #eaefff;
+        border-radius: 10px;
+    }
+    &.action{
+        justify-content: center;
+        margin: -10px;
+        .bt{
+            height: 40px;
+            padding: 0 20px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-size: 16px;
+            color: white;
+            margin: 10px;
+            &.cancel{
+                background: #e56576;
+            }
+            &.ok{
+                background: #3246D3;
+            }
+        }
+    }
+}

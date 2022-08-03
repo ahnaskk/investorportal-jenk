@@ -1,0 +1,130 @@
+.wrapper{
+    background: #F6F7F9;
+    box-shadow: 0 7px 28px rgba($color: #000343, $alpha: 0.2);
+    border-radius: 10px;
+    width: 646px;
+    color: #929497;
+    .title{
+        color: #48486E;
+        font-size: 29px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .input-group{
+        width: 556px;
+        border: 1px solid #C9CAD4;
+        position: relative;
+        $h: 53px;
+        height: $h;
+        border-radius: 10px;
+        font-size: 26px;
+        margin: 22px 0 0;
+        color: inherit;
+        box-shadow: 0 0 20px rgba($color: #010581, $alpha: 0.05);
+        .placeholder{
+            color: inherit;
+            font-size: inherit;
+            position: absolute;
+            left: 0;
+            padding: 0 0 0 23px;
+            line-height: $h;
+        }
+        input{
+            border: none;
+            width: 100%;
+            background: transparent;
+            font-size: inherit;
+            color: inherit;
+            height: $h;
+            padding: 0 0 0 50px;
+        }
+    }
+}
+.box{
+    padding: 37px 45px 28px;
+    &.input-box{
+        border: 1px solid #E8E8EF;
+        background: white;
+        border-radius: inherit;
+    }
+}
+
+.agreement {
+    // display: flex;
+    // align-items: center;
+    font-size: 20px;
+    color: #7A7A7A;
+    margin-bottom: 15px;
+    line-height: 32px;
+
+    &.m-0{
+        margin: 0;
+    }
+
+    &.active {
+        // color: #6D7CDF;
+
+        .check-box {
+            $cl: #3246D3;
+            border-color: $cl;
+            background: $cl;
+            color: #fff;
+        }
+    }
+
+    .check-box,
+    .label {
+        user-select: none;
+        cursor: pointer;
+    }
+    .check-wrapper{
+        display: inline-block;
+    }
+    .check-box {
+        height: 25px;
+        width: 25px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid #B9BFCC;
+        color: #EEEFF6;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-right: 8px;
+        font-size: 16px;
+    }
+}
+
+.submit{
+    display: flex;
+    justify-content: flex-end;
+    .blue-bt{
+        font-size: 20px;
+        height: 53px;
+        padding: 0 26px;
+        width: auto;
+        min-width: 190px;
+        text-align: center;
+    }
+}
+
+.balance-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    .balance{
+        .sign,.amount{
+            font-size: 26px;
+        }
+        .sign{
+            margin-right: 5px;
+        }
+        .amount{
+            margin-right: 15px;
+        }
+    }
+}

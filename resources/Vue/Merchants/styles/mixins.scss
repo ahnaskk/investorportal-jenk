@@ -1,0 +1,71 @@
+$hidpi2:1690px; 
+$xl:1199px;
+
+// style sets
+@mixin flex {
+    display: flex;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin justify-center {
+    display: flex;
+    justify-content: center;
+}
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin pr{
+    position: relative;
+}
+@mixin pa{
+    position: absolute;
+}
+@mixin ps{
+    position: static;
+}
+// media queries
+@mixin hidpi2{
+    @media screen and (max-width:$hidpi2){
+        @content;
+    }
+}
+@mixin md {
+    @media screen and (max-width:700px) {
+        @content;
+    }
+}
+@mixin lg{
+    @media screen and (max-width:950px) {
+        @content;
+    }
+}
+@mixin xxl {
+    @media screen and (max-width:1350px) {
+        @content;
+    }
+}
+@mixin xl {
+    @media screen and (max-width:$xl) {
+        @content;
+    }
+}
+@mixin sm {
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
+@mixin xs {
+    @media screen and (max-width:400px) {
+        @content;
+    }
+}

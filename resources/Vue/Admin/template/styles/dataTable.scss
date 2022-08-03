@@ -1,0 +1,112 @@
+
+// data table
+table.data-table{
+    width: 100%;
+    border-spacing: 0 4px;
+    tr{
+        font-size: 14px;
+        font-weight: normal;
+        color: #8286A5;
+        $rd:5px;
+        td:first-of-type,
+        th:first-of-type{
+            border-radius: $rd 0 0 $rd;
+        }
+        td:last-of-type,
+        th:last-of-type{
+            border-radius: 0 $rd $rd 0;
+        }
+        &.sticky-title{
+            position: sticky;
+            top: 0;
+            background: var(--bg);
+        }
+    }
+    td,th{
+        $y: 0;
+        $x: 7px;
+        padding: $y $x $y $x;
+        height: 50px;
+    }
+    th{
+        text-align: left!important;
+        color: #48486E;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    td{
+        background: white;
+        white-space: nowrap;
+        &.index{
+            min-width: 50px;
+            text-align: center;
+        }
+        &.title{
+            font-weight: bold;
+            color: #48486E;
+        }
+        &.action{
+            span.add{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+.table-action-bt{
+    width: 100%;
+    height: 35px;
+    background: #2a4a76;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.table-download-bt{
+    border: none;
+    width: 100%;
+    max-width: 410px;
+    background: #F8F8FC;
+    padding: 7px 10px 7px 15px;
+    color: #8286A5;
+    font-size: inherit;
+    border-radius: 5px;
+    text-align: left;
+    img{
+        margin-right: 10px;
+    }
+}
+.table-add-bt{
+    border: none;
+    background: #E3E2F1;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #9aa2b8;
+    &.active{
+        background: #4a486e;
+        color: white;
+    }
+}
+// inner data table
+table.inner-data-table{
+    width: 100%;
+    /*
+    thead{
+        th{
+            color: #fa5440;
+        }
+    }
+    tbody{
+        td{
+            color: #3246d3;
+        }
+    }
+    */
+}

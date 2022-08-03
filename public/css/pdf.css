@@ -1,0 +1,56 @@
+.weeekly-rp{
+    
+    width: 100%;
+    max-width:1000px;
+    margin: 0 auto;
+    display:inline-block; 
+}
+.weeekly-rp li{
+	list-style-type:none;
+	text-align:left;
+	line-height: 25px;
+}
+.invest-prc{
+	padding-right: 10px;
+}
+.invet-det li{
+	line-height:22px;
+
+}
+table, tr, th, td{
+	
+	border:1px solid #dbdbdb;
+	border-collapse: collapse;
+	padding: 10px;
+
+}
+.report-week tfoot{
+
+	padding: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+.rep li{
+	float:left;
+	background: #f4f4f4;
+	padding: 10px 20px;
+	margin-right: 10px;
+	font-size:13px;
+	
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.invtre{
+	background:#cac8e699;
+	color: #353535;
+}
+
+table tr:nth-child(odd) {
+    background:#f2f2f2;
+	color: #353535;
+}

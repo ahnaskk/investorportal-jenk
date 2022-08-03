@@ -1,0 +1,533 @@
+.main-margin .navbar {
+    margin-left:0px !important;
+    }
+
+
+.skin-blue .main-margin .navbar {
+    background-color: #2b7098;
+}    
+
+a.logo.main-merchant {
+    background: none !important;
+    -webkit-transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    display: block;
+    float: left;
+    height:auto !important;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width:auto !important;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0 15px;
+    font-weight: 300;
+    overflow:auto !important;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------*/
+.no-pad{
+  padding-right:0;
+  padding-left: 0;
+}
+/******* IMPORTANT LOOK HERE
+CREATE NAVBAR FROM BELOW SITE **************
+https://work.smarchal.com/twbscolor/css/e74c3cc0392becf0f1ffbbbc0*/
+.navbar-default {
+  background-color: #1b4f84;
+  border-color: #4d8fc8;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #000000;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+        padding: 22px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+      color: #000000;
+    background: #fff;
+        transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #000000;
+  background:none;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #000000;
+  background-color: #4d8fc8;
+}
+.navbar-default .navbar-toggle {
+      border: none;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background:none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000000;
+    background-color: #4d8fc8;
+  }
+}
+@media (max-width:767px){
+.navbar-header {
+    border-bottom: 1px solid #ccc;
+}}
+
+
+
+.download-btn a {
+    float: right;
+}
+
+.download-btn{
+    margin-top: 30px;
+        float: left;
+    width: 100%;
+        margin-bottom: 15px;
+}
+ul.nav.navbar-nav.navbar-right.menu-edit {
+    margin: 0px -15px;
+}
+
+@media (max-width:767px){
+.navbar-default .navbar-nav > li > a:hover {
+
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    background-color:#fff;
+        -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}}
+
+
+
+
+
+
+
+
+.navbar-default.top-nav {
+    background-color: #2b3251;
+    border-bottom: 1px solid #e2e2e2 !important;
+    border: none;
+    /*padding: 10px;*/
+}
+
+.logo-brand{
+  float: left;
+      padding: 10px;
+          width: 70px;
+}
+@media (max-width:767px){
+ul.nav.navbar-nav.navbar-right.menu-edit li a:hover{
+  color:  #000;
+
+}}
+
+.list-detail {
+    float: left;
+    width: 100%;
+    margin-bottom: 70px;
+    padding: 15px;
+}
+
+.list-detail tr th {
+    width: 1%;
+}
+
+a.canvasjs-chart-credit {
+    display: none;
+}
+div#chartContainer {
+    margin-top: 110px;
+}
+
+.download-btn a span .fa {
+    font-size: 16px;
+    color: #5f5f5f;
+    padding-right: 7px;
+}
+
+@media(max-width:1199px) and (min-width:992px){
+table.w3-table-all tr th .fa {
+    padding-left: 0px !important;
+}}
+@media(max-width:777px){
+.list-detail {
+    overflow: overlay;
+}}
+
+
+
+.download-btn a {
+    color: #00a0f6;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ddd;
+    padding: 5px 20px;
+}
+
+.download-btn a:hover {
+    color:#5f5f5f;
+}
+
+table.w3-table-all {
+    border: 1px solid #e2e2e2;
+}
+
+.list-detail table.w3-table-all tbody tr th {
+    background:#dbe6f2;
+    padding: 7px;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+        border: 1px solid #e2e2e2;
+}
+
+th.sep-color {
+    color: #585858 !important;
+}
+
+table.w3-table-all tr th .fa {
+    padding-left: 6px;
+}
+td.merchant-style {
+    font-weight: 500 !important; 
+    color: #00a0f6 !important;
+}
+
+table.w3-table-all tr td {
+    border: 1px solid #e2e2e2;
+}
+
+.list-detail table.w3-table-all tbody tr td {
+    padding: 7px;
+    font-family: 'Roboto', sans-serif;
+        color: #000;
+    font-weight: 500;
+}
+.green-advance{
+  color: #31a031 !important;
+}
+
+tr.total-style {
+    background-color: #dbe6f2;
+}
+
+
+
+/*--------------*/
+
+
+
+.content-wrapper.body-wrap {
+    margin-left: 0px !important;
+        padding: 15px;
+}
+
+
+
+footer.main-footer.foot-edit {
+    margin-left: 0px !important;
+    background-color: #2b3251 !important;
+    text-align: right !important;
+    color: #fff !important;
+    font-style: italic !important;
+}
+
+.content-header.title-investor {
+    margin-top: 65px !important;
+    padding: 12px 25px;
+    background-color: #f1f1f1;
+    box-shadow: -1px 1px 10px -2px;
+    border-radius: 4px;
+}
+
+.content.graph-sec {
+    padding: 0 !important;
+        margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*home page graph section*/
+
+
+.caption {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  height: 40px;
+}
+
+.graph {
+  position: relative;
+  float: right;
+}
+
+.graph ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+
+.legend {
+   background: #f0f0f0;
+   border-radius: 4px;
+   bottom: 0;
+   position: relative;
+   text-align: left;
+   width: 100%;
+}
+
+.legend li {
+   display: block;
+   float: left;
+   height: 20px;
+   margin: 0;
+   padding: 10px 20px;
+}
+
+.legend span.icon {
+   background-position: 50% 0;
+   border-radius: 2px;
+   display: block;
+   float: left;
+   height: 16px;
+   margin: 2px 10px 0 0;
+   width: 16px;
+}
+
+.x-axis {
+   bottom: 0;
+   color: #555;
+   position: absolute;
+   text-align: center;
+}
+
+.x-axis li {
+   float: left;
+   margin: 0 10px;
+}
+
+.y-axis {
+   color: #555;
+   position: absolute;
+   text-align: left;
+}
+
+.y-axis ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.y-axis li {
+   border-top: 1px solid #ccc;
+   display: block;
+}
+
+.y-axis li span {
+   display: block;
+   position: relative;
+   text-align: right;
+}
+
+.bars {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.bar-group {
+  float: left;
+  height: 100%;
+  position: relative;
+  margin: 0 10px;
+}
+.bar {
+  border-radius: 3px 3px 0 0;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  #cursor: pointer;
+  display: block;
+}
+
+.bar span {
+  margin-top: -25px;
+  *zoom: 1;
+  display: none;
+  position: relative;
+}
+
+.item-0 {
+  background: #d0e4f7; /* Old browsers */
+  background: -moz-linear-gradient(left,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d0e4f7), color-stop(24%,#73b1e7), color-stop(50%,#0a77d5), color-stop(79%,#539fe1), color-stop(100%,#87bcea)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* IE10+ */
+  background: linear-gradient(to right,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 ); /* IE6-9 */
+}
+
+.item-1 {
+  background: #f0b7a1; /* Old browsers */
+  background: -moz-linear-gradient(left,  #f0b7a1 0%, #8c3310 42%, #752201 59%, #bf6e4e 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f0b7a1), color-stop(42%,#8c3310), color-stop(59%,#752201), color-stop(100%,#bf6e4e)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #f0b7a1 0%,#8c3310 42%,#752201 59%,#bf6e4e 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #f0b7a1 0%,#8c3310 42%,#752201 59%,#bf6e4e 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #f0b7a1 0%,#8c3310 42%,#752201 59%,#bf6e4e 100%); /* IE10+ */
+  background: linear-gradient(to right,  #f0b7a1 0%,#8c3310 42%,#752201 59%,#bf6e4e 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=1 ); /* IE6-9 */
+}
+
+.item-2 {
+  background: #6d6d6d; /* Old browsers */
+  background: -moz-linear-gradient(left,  #6d6d6d 0%, #828282 12%, #666666 25%, #424242 49%, #727272 72%, #666666 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#6d6d6d), color-stop(12%,#828282), color-stop(25%,#666666), color-stop(49%,#424242), color-stop(72%,#727272), color-stop(100%,#666666)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #6d6d6d 0%,#828282 12%,#666666 25%,#424242 49%,#727272 72%,#666666 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #6d6d6d 0%,#828282 12%,#666666 25%,#424242 49%,#727272 72%,#666666 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #6d6d6d 0%,#828282 12%,#666666 25%,#424242 49%,#727272 72%,#666666 100%); /* IE10+ */
+  background: linear-gradient(to right,  #6d6d6d 0%,#828282 12%,#666666 25%,#424242 49%,#727272 72%,#666666 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d6d6d', endColorstr='#666666',GradientType=1 ); /* IE6-9 */
+}
+
+.item-3 {
+  background: #bfd255; /* Old browsers */
+  background: -moz-linear-gradient(left,  #bfd255 0%, #8eb92a 28%, #72aa00 47%, #8eb92a 78%, #9ecb2d 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#bfd255), color-stop(28%,#8eb92a), color-stop(47%,#72aa00), color-stop(78%,#8eb92a), color-stop(100%,#9ecb2d)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #bfd255 0%,#8eb92a 28%,#72aa00 47%,#8eb92a 78%,#9ecb2d 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #bfd255 0%,#8eb92a 28%,#72aa00 47%,#8eb92a 78%,#9ecb2d 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #bfd255 0%,#8eb92a 28%,#72aa00 47%,#8eb92a 78%,#9ecb2d 100%); /* IE10+ */
+  background: linear-gradient(to right,  #bfd255 0%,#8eb92a 28%,#72aa00 47%,#8eb92a 78%,#9ecb2d 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=1 ); /* IE6-9 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+a.logo.main-merchant img {
+    margin-top: 8px !important;
+    width: 55px !important;
+}
+
+
+ul.nav.navbar-nav.navbar-right.menu-edit li a:hover, a:focus {
+    background: rgb(255, 255, 255) !important;
+    color: #000000 !important;
+}
+ul.dropdown-menu.user-toggle li.user-footer {
+    background-color: #f1f1f1;
+    box-shadow: -3px 4px 10px -4px;
+    border-radius: 5px;
+    padding: 20px;
+}
+ul.dropdown-menu.user-toggle {
+    margin-top: 0px;
+    width: 300px !important;
+    border: none;
+}
+
+.ath-name p {
+    font-weight: 600;
+}
+
+span.name-line {
+    margin-right: 6px;
+}
+
+a.btn.btn-default.btn-flat.user-sign-out {
+    background-color: #2b3251;
+    color: #fff !important;
+}
+
+a.btn.btn-default.btn-flat.user-sign-out:hover {
+    background-color: #fff;
+    color: #000 !important;
+        transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+}
+
+/*.main-login-sec {
+    background: url(https://www.visiquate.com/assets/images/solution-graphics/sales-and-crm-analytics/sales-background.jpg) no-repeat;
+    background-size: cover;
+}*/

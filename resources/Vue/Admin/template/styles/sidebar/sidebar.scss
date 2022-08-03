@@ -1,0 +1,177 @@
+@import './variables.scss';
+@import '~a/mixins.scss';
+@import './style-sets.scss';
+#menu-panel{
+    max-width: 260px;
+    min-width: 240px;
+    transition: max-width 0.5s ease, min-width 0.5s ease;
+    background-color: #F7FAFF;
+    .menu-list{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        ::v-deep .menu-list.sub{
+            overflow: hidden;
+            margin-left: 26px;
+            li{
+                padding: 10px;
+                color: $linkClr;
+                a{
+                    &.router-link-exact-active{
+                        span{
+                            color: $linkHover;
+                        }
+                    }
+                }
+                &:hover{
+                    color: $linkHover;
+                }
+            }
+        }
+    }
+    // span that contains icon and link
+    .menu-title{
+        padding: 10px 0 10px 25px;
+        display: block;
+        position: relative;
+        color: $titleClr;
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        .collapsible{
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        &:hover{
+            color: $titleHover;
+        }
+    }
+    .item-icon{
+        margin-right: 10px;
+    }
+    // the list item { li }
+    .menu-item{
+        padding:0;
+        cursor: pointer;
+        width: 100%;
+        background: $mainBg;
+        &.sub{
+            color: $subClr;
+            margin-left:$subPadding;
+        }
+        // router link [ it has the class menu-title ]
+        a{
+            @include link;
+            svg{
+                fill:#bac1d2;
+            }
+            &:hover{
+                @include linkHover;
+                svg{
+                    fill: $linkHover;
+                    color: $linkHover;
+                }
+            }
+            &:focus{
+                @include linkFocus;
+                svg{
+                    fill: $linkHover;
+                    color: $linkHover;
+                }
+            }
+            &.router-link-exact-active{
+                @include exactActiveLink;
+                background: $active;
+                border-radius: 55px;
+                box-shadow: -80px 0px 0px 0px $active;
+            }
+            &.router-link-active{
+                @include activeLink;
+                svg{
+                    fill: #fff;
+                }
+                .sortArrowIcon{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    // first letter of the title of those which has no icon
+    .item-indicator{
+        font-weight: 900;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition:0.3s ease,
+        visibility none;
+    }
+    // arrows
+    .sortArrowIcon{
+        position: absolute;
+        right: 20px;
+        color: rgb(97, 118, 146);
+        transition: all 0.5s ease;
+        &.turn{
+            transform: rotate(-90deg);
+        }
+    }
+    // common style to add on every menu items
+    &.collapsed{
+        max-width: 60px;
+        min-width: 55px;
+        flex-shrink: 0;
+        .menu-title .collapsible{
+            opacity: 0;
+            visibility: hidden;
+        }
+        // arrows
+        .sortArrowIcon{
+            position: absolute;
+            left: 5px;
+            // top: 10px;
+            color: rgb(97, 118, 146);
+        }
+        .item-indicator{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    @include md{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 400px;
+        min-height: 100vh;
+        height: 100vh;
+        background: #181c3f;
+        padding: 80px 0 0 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease;
+        max-width: 200px;
+        &.collapsed{
+            max-width: 200px;
+            transform: translateX(0);
+            .menu-title .collapsible{
+                opacity: 1;
+                visibility: visible;
+            }
+            // arrows
+            .sortArrowIcon{
+                position: absolute;
+                left: auto;
+                // top: 10px;
+                color: $arrowClr;
+            }
+            .item-indicator{
+                display: none;
+            }
+        }
+    }
+    &.open, .open{
+        background: $subBg;
+        ul{
+            border-top: 1px solid $openDivider;
+        }
+    }
+}

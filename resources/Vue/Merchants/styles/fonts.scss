@@ -1,0 +1,38 @@
+.semi-bold{
+    font-weight: 400;
+}
+.t-upc{
+    text-transform: uppercase;
+}
+.t-cpt{
+    text-transform: capitalize;
+}
+.msg{
+    color: $grey_1;
+    font-size: 80%;
+    font-weight: 400;
+}
+.msg_title{
+    color: $grey_2;
+    text-decoration: none;
+    transition: $cl_transition;
+    &:hover{
+        color: $grey_dark;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+.hover_dark :hover{
+    transition: color 0.3s ease;
+    color: #333;
+}
+.slim{
+    font-size: 15px;
+    font-weight: 200;
+}
+.err_msg{
+    font-size: 12px;
+    color: red;
+    text-align: center;
+    margin: 0 0 15px 0;
+}

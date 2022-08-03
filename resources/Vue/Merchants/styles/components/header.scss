@@ -1,0 +1,38 @@
+#header{
+    // background: #ccc;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    background-color:#181c3f;;
+    @include sm{
+        padding: 10px 20px;
+        flex-wrap: nowrap;
+        .align-center:first-of-type{
+            width: 100%;
+            justify-content: space-between;
+        }
+        .logo_link, .logo-img{
+            width: 145px;
+        }
+        .mr{
+            margin: 0;
+        }
+    }
+}
+
+.box-title{
+    margin: 0;
+    font-size: 16px;
+    white-space: nowrap;
+    font-family: inherit;
+    font-weight: 400;
+}
+.sm-pr{
+    @include pr;
+    @include sm{
+        @include ps;
+    }
+}

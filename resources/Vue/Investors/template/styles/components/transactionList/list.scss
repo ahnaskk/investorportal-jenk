@@ -1,0 +1,44 @@
+@import '~/mixins.scss';
+
+.payment-list {
+    margin: -12px 0;
+
+    .payment-li {
+        padding: 12px 0;
+    }
+}
+
+.payment-list-box {
+    flex-grow: 1;
+    @include xl {
+        width: 50%;
+    }
+
+    @include lg {
+        width: 100%;
+    }
+}
+
+.title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    
+    .title {
+        font-size: 26px;
+        font-weight: bold;
+        color: #626688;
+
+        @media screen and (max-width: 1440px){
+            font-size: 19px;
+        }
+
+        @include xs {
+            font-size: 18px;
+        }
+    }
+
+}
+

@@ -1,0 +1,11 @@
+::v-deep .table-header{
+    .date-selector{
+        .input-col.bt-col{
+            align-items: flex-start;
+            button,a{
+                margin-top: 34px;
+            }
+        }
+    }
+}  
+

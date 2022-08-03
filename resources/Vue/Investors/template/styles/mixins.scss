@@ -1,0 +1,121 @@
+$hidpi1:1800px;
+$hidpi2:1690px;
+$xxxl:1500px;
+$xxl:1240px;
+$xl:1199px;
+$lg:991px;
+$md:768px;
+$xmd:870px;
+$sm:580px;
+$xs:470px;
+
+@mixin hidpi1{
+    @media screen and (max-width:$hidpi1){
+        @content;
+    }
+}
+
+@mixin hidpi2{
+    @media screen and (max-width:$hidpi2){
+        @content;
+    }
+}
+
+@mixin xxxl{
+    @media screen and (max-width:$xxxl){
+        @content;
+    }
+}
+@mixin xxl {
+    @media screen and (max-width:$xxl) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (max-width:$xl) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (max-width:$lg) {
+        @content;
+    }
+}
+
+@mixin xmd {
+    @media screen and (max-width:$xmd) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media screen and (max-width:$md) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (max-width:$sm) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media screen and (max-width:$xs) {
+        @content;
+    }
+}
+
+
+// style sets
+@mixin flex {
+    display: flex;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin align-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// variables
+
+//colors
+$theme_bg:#202337;
+$dark:#202237;
+$orange:#fe522e;
+$grey_1:#6b7180;
+$grey_2:#45527b;
+$grey_dark:#444;
+$light_grey:#e9ecef;
+//gradients
+$bt_blue:linear-gradient(to right, rgba(115, 52, 225, 1) 0%, rgba(106, 116, 202, 1) 100%);
+$nav_active:linear-gradient(180deg, rgb(247, 79, 77) 1%, rgb(255, 81, 41) 97%);
+// transitions
+$cl_transition:color 0.3s ease-in-out;
+
+// loader colors and offset
+$loaderOffset:15px;
+$loaderP1:#fff;
+$loaderP2:#fff;
+$loaderP3:#fff;
+$loaderP4:transparent;
