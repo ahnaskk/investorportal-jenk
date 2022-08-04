@@ -1,13 +1,12 @@
-#!groovy
 pipeline {
   agent {
     docker {
-      image 'node:7-alpine'
+      image 'node:16-alpine'
     }
   }
 
   stages {
-    stage('Unit') {
+    stage('Test') {
       steps {
         sh 'node -v'
         sh 'npm -v'
